@@ -1,0 +1,2336 @@
+<?xml version='1.0' encoding='utf-8' ?>
+
+<!-- build 10300.17.0615.2100                               -->
+<workbook source-build='10.3.1 (10300.17.0615.2100)' source-platform='win' version='10.3' xml:base='https://us-east-1.online.tableau.com' xmlns:user='http://www.tableausoftware.com/xml/user'>
+  <repository-location id='MSHA' path='/t/mortonsaltinc/workbooks' revision='1.0' site='mortonsaltinc' />
+  <preferences>
+    <preference name='ui.encoding.shelf.height' value='24' />
+    <preference name='ui.shelf.height' value='26' />
+  </preferences>
+  <datasources>
+    <datasource caption='Mines' inline='true' name='federated.0ji7vf51y9cb8415qgiwb0sjrl6p' version='10.3'>
+      <connection class='federated'>
+        <named-connections>
+          <named-connection caption='Mines' name='textscan.0xljmty1v3u53c1a6v66s11w7hk1'>
+            <connection class='textscan' directory='//10.0.2.4/qemu/home/gilles/documents/websites/support.gillespilon.ca/fil/tableau/msha' filename='Mines.txt' password='' server='' workgroup-auth-mode='as-is' />
+          </named-connection>
+        </named-connections>
+        <relation connection='textscan.0xljmty1v3u53c1a6v66s11w7hk1' name='Mines.txt' table='[Mines#txt]' type='table'>
+          <columns character-set='UTF-8' header='yes' locale='en_US' separator='|'>
+            <column datatype='integer' name='MINE_ID' ordinal='0' />
+            <column datatype='string' name='CURRENT_MINE_NAME' ordinal='1' />
+            <column datatype='string' name='COAL_METAL_IND' ordinal='2' />
+            <column datatype='string' name='CURRENT_MINE_TYPE' ordinal='3' />
+            <column datatype='string' name='CURRENT_MINE_STATUS' ordinal='4' />
+            <column datatype='date' name='CURRENT_STATUS_DT' ordinal='5' />
+            <column datatype='string' name='CURRENT_CONTROLLER_ID' ordinal='6' />
+            <column datatype='string' name='CURRENT_CONTROLLER_NAME' ordinal='7' />
+            <column datatype='string' name='CURRENT_OPERATOR_ID' ordinal='8' />
+            <column datatype='string' name='CURRENT_OPERATOR_NAME' ordinal='9' />
+            <column datatype='string' name='STATE' ordinal='10' />
+            <column datatype='integer' name='BOM_STATE_CD' ordinal='11' />
+            <column datatype='integer' name='FIPS_CNTY_CD' ordinal='12' />
+            <column datatype='string' name='FIPS_CNTY_NM' ordinal='13' />
+            <column datatype='integer' name='CONG_DIST_CD' ordinal='14' />
+            <column datatype='string' name='COMPANY_TYPE' ordinal='15' />
+            <column datatype='date' name='CURRENT_CONTROLLER_BEGIN_DT' ordinal='16' />
+            <column datatype='string' name='DISTRICT' ordinal='17' />
+            <column datatype='string' name='OFFICE_CD' ordinal='18' />
+            <column datatype='string' name='OFFICE_NAME' ordinal='19' />
+            <column datatype='integer' name='ASSESS_CTRL_NO' ordinal='20' />
+            <column datatype='integer' name='PRIMARY_SIC_CD' ordinal='21' />
+            <column datatype='string' name='PRIMARY_SIC' ordinal='22' />
+            <column datatype='integer' name='PRIMARY_SIC_CD_1' ordinal='23' />
+            <column datatype='integer' name='PRIMARY_SIC_CD_SFX' ordinal='24' />
+            <column datatype='integer' name='SECONDARY_SIC_CD' ordinal='25' />
+            <column datatype='string' name='SECONDARY_SIC' ordinal='26' />
+            <column datatype='integer' name='SECONDARY_SIC_CD_1' ordinal='27' />
+            <column datatype='integer' name='SECONDARY_SIC_CD_SFX' ordinal='28' />
+            <column datatype='integer' name='PRIMARY_CANVASS_CD' ordinal='29' />
+            <column datatype='string' name='PRIMARY_CANVASS' ordinal='30' />
+            <column datatype='integer' name='SECONDARY_CANVASS_CD' ordinal='31' />
+            <column datatype='string' name='SECONDARY_CANVASS' ordinal='32' />
+            <column datatype='string' name='CURRENT_103I' ordinal='33' />
+            <column datatype='date' name='CURRENT_103I_DT' ordinal='34' />
+            <column datatype='string' name='PORTABLE_OPERATION' ordinal='35' />
+            <column datatype='integer' name='PORTABLE_FIPS_ST_CD' ordinal='36' />
+            <column datatype='integer' name='DAYS_PER_WEEK' ordinal='37' />
+            <column datatype='integer' name='HOURS_PER_SHIFT' ordinal='38' />
+            <column datatype='integer' name='PROD_SHIFTS_PER_DAY' ordinal='39' />
+            <column datatype='integer' name='MAINT_SHIFTS_PER_DAY' ordinal='40' />
+            <column datatype='integer' name='NO_EMPLOYEES' ordinal='41' />
+            <column datatype='string' name='PART48_TRAINING' ordinal='42' />
+            <column datatype='real' name='LONGITUDE' ordinal='43' />
+            <column datatype='real' name='LATITUDE' ordinal='44' />
+            <column datatype='integer' name='AVG_MINE_HEIGHT' ordinal='45' />
+            <column datatype='string' name='MINE_GAS_CATEGORY_CD' ordinal='46' />
+            <column datatype='integer' name='METHANE_LIBERATION' ordinal='47' />
+            <column datatype='integer' name='NO_PRODUCING_PITS' ordinal='48' />
+            <column datatype='integer' name='NO_NONPRODUCING_PITS' ordinal='49' />
+            <column datatype='integer' name='NO_TAILING_PONDS' ordinal='50' />
+            <column datatype='string' name='PILLAR_RECOVERY_USED' ordinal='51' />
+            <column datatype='string' name='HIGHWALL_MINER_USED' ordinal='52' />
+            <column datatype='string' name='MULTIPLE_PITS' ordinal='53' />
+            <column datatype='string' name='MINERS_REP_IND' ordinal='54' />
+            <column datatype='string' name='SAFETY_COMMITTEE_IND' ordinal='55' />
+            <column datatype='integer' name='MILES_FROM_OFFICE' ordinal='56' />
+            <column datatype='string' name='DIRECTIONS_TO_MINE' ordinal='57' />
+            <column datatype='string' name='NEAREST_TOWN' ordinal='58' />
+          </columns>
+        </relation>
+        <metadata-records>
+          <metadata-record class='column'>
+            <remote-name>MINE_ID</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MINE_ID]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MINE_ID</remote-alias>
+            <ordinal>0</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_MINE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_MINE_NAME]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_MINE_NAME</remote-alias>
+            <ordinal>1</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COAL_METAL_IND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COAL_METAL_IND]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>COAL_METAL_IND</remote-alias>
+            <ordinal>2</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_MINE_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_MINE_TYPE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_MINE_TYPE</remote-alias>
+            <ordinal>3</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_MINE_STATUS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_MINE_STATUS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_MINE_STATUS</remote-alias>
+            <ordinal>4</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_STATUS_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CURRENT_STATUS_DT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_STATUS_DT</remote-alias>
+            <ordinal>5</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_CONTROLLER_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_CONTROLLER_ID]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_CONTROLLER_ID</remote-alias>
+            <ordinal>6</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_CONTROLLER_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_CONTROLLER_NAME]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_CONTROLLER_NAME</remote-alias>
+            <ordinal>7</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_OPERATOR_ID</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_OPERATOR_ID]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_OPERATOR_ID</remote-alias>
+            <ordinal>8</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_OPERATOR_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_OPERATOR_NAME]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_OPERATOR_NAME</remote-alias>
+            <ordinal>9</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>STATE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[STATE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>STATE</remote-alias>
+            <ordinal>10</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>BOM_STATE_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[BOM_STATE_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>BOM_STATE_CD</remote-alias>
+            <ordinal>11</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS_CNTY_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[FIPS_CNTY_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>FIPS_CNTY_CD</remote-alias>
+            <ordinal>12</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>FIPS_CNTY_NM</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[FIPS_CNTY_NM]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>FIPS_CNTY_NM</remote-alias>
+            <ordinal>13</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CONG_DIST_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[CONG_DIST_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CONG_DIST_CD</remote-alias>
+            <ordinal>14</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>COMPANY_TYPE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[COMPANY_TYPE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>COMPANY_TYPE</remote-alias>
+            <ordinal>15</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_CONTROLLER_BEGIN_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CURRENT_CONTROLLER_BEGIN_DT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_CONTROLLER_BEGIN_DT</remote-alias>
+            <ordinal>16</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DISTRICT</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DISTRICT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>DISTRICT</remote-alias>
+            <ordinal>17</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OFFICE_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OFFICE_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>OFFICE_CD</remote-alias>
+            <ordinal>18</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>OFFICE_NAME</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[OFFICE_NAME]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>OFFICE_NAME</remote-alias>
+            <ordinal>19</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>ASSESS_CTRL_NO</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[ASSESS_CTRL_NO]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>ASSESS_CTRL_NO</remote-alias>
+            <ordinal>20</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_SIC_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRIMARY_SIC_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_SIC_CD</remote-alias>
+            <ordinal>21</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_SIC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRIMARY_SIC]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_SIC</remote-alias>
+            <ordinal>22</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_SIC_CD_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRIMARY_SIC_CD_1]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_SIC_CD_1</remote-alias>
+            <ordinal>23</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_SIC_CD_SFX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRIMARY_SIC_CD_SFX]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_SIC_CD_SFX</remote-alias>
+            <ordinal>24</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_SIC_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SECONDARY_SIC_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_SIC_CD</remote-alias>
+            <ordinal>25</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_SIC</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SECONDARY_SIC]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_SIC</remote-alias>
+            <ordinal>26</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_SIC_CD_1</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SECONDARY_SIC_CD_1]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_SIC_CD_1</remote-alias>
+            <ordinal>27</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_SIC_CD_SFX</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SECONDARY_SIC_CD_SFX]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_SIC_CD_SFX</remote-alias>
+            <ordinal>28</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_CANVASS_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PRIMARY_CANVASS_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_CANVASS_CD</remote-alias>
+            <ordinal>29</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PRIMARY_CANVASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PRIMARY_CANVASS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PRIMARY_CANVASS</remote-alias>
+            <ordinal>30</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_CANVASS_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[SECONDARY_CANVASS_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_CANVASS_CD</remote-alias>
+            <ordinal>31</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SECONDARY_CANVASS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SECONDARY_CANVASS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SECONDARY_CANVASS</remote-alias>
+            <ordinal>32</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_103I</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[CURRENT_103I]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_103I</remote-alias>
+            <ordinal>33</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>CURRENT_103I_DT</remote-name>
+            <remote-type>133</remote-type>
+            <local-name>[CURRENT_103I_DT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>CURRENT_103I_DT</remote-alias>
+            <ordinal>34</ordinal>
+            <local-type>date</local-type>
+            <aggregation>Year</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;date&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PORTABLE_OPERATION</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PORTABLE_OPERATION]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PORTABLE_OPERATION</remote-alias>
+            <ordinal>35</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PORTABLE_FIPS_ST_CD</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PORTABLE_FIPS_ST_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PORTABLE_FIPS_ST_CD</remote-alias>
+            <ordinal>36</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DAYS_PER_WEEK</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[DAYS_PER_WEEK]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>DAYS_PER_WEEK</remote-alias>
+            <ordinal>37</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HOURS_PER_SHIFT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[HOURS_PER_SHIFT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>HOURS_PER_SHIFT</remote-alias>
+            <ordinal>38</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PROD_SHIFTS_PER_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[PROD_SHIFTS_PER_DAY]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PROD_SHIFTS_PER_DAY</remote-alias>
+            <ordinal>39</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MAINT_SHIFTS_PER_DAY</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MAINT_SHIFTS_PER_DAY]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MAINT_SHIFTS_PER_DAY</remote-alias>
+            <ordinal>40</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO_EMPLOYEES</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NO_EMPLOYEES]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>NO_EMPLOYEES</remote-alias>
+            <ordinal>41</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PART48_TRAINING</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PART48_TRAINING]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PART48_TRAINING</remote-alias>
+            <ordinal>42</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LONGITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LONGITUDE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>LONGITUDE</remote-alias>
+            <ordinal>43</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>LATITUDE</remote-name>
+            <remote-type>5</remote-type>
+            <local-name>[LATITUDE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>LATITUDE</remote-alias>
+            <ordinal>44</ordinal>
+            <local-type>real</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>AVG_MINE_HEIGHT</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[AVG_MINE_HEIGHT]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>AVG_MINE_HEIGHT</remote-alias>
+            <ordinal>45</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MINE_GAS_CATEGORY_CD</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MINE_GAS_CATEGORY_CD]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MINE_GAS_CATEGORY_CD</remote-alias>
+            <ordinal>46</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>METHANE_LIBERATION</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[METHANE_LIBERATION]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>METHANE_LIBERATION</remote-alias>
+            <ordinal>47</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO_PRODUCING_PITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NO_PRODUCING_PITS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>NO_PRODUCING_PITS</remote-alias>
+            <ordinal>48</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO_NONPRODUCING_PITS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NO_NONPRODUCING_PITS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>NO_NONPRODUCING_PITS</remote-alias>
+            <ordinal>49</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NO_TAILING_PONDS</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[NO_TAILING_PONDS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>NO_TAILING_PONDS</remote-alias>
+            <ordinal>50</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>PILLAR_RECOVERY_USED</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[PILLAR_RECOVERY_USED]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>PILLAR_RECOVERY_USED</remote-alias>
+            <ordinal>51</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>HIGHWALL_MINER_USED</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[HIGHWALL_MINER_USED]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>HIGHWALL_MINER_USED</remote-alias>
+            <ordinal>52</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MULTIPLE_PITS</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MULTIPLE_PITS]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MULTIPLE_PITS</remote-alias>
+            <ordinal>53</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MINERS_REP_IND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[MINERS_REP_IND]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MINERS_REP_IND</remote-alias>
+            <ordinal>54</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>SAFETY_COMMITTEE_IND</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[SAFETY_COMMITTEE_IND]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>SAFETY_COMMITTEE_IND</remote-alias>
+            <ordinal>55</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>MILES_FROM_OFFICE</remote-name>
+            <remote-type>20</remote-type>
+            <local-name>[MILES_FROM_OFFICE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>MILES_FROM_OFFICE</remote-alias>
+            <ordinal>56</ordinal>
+            <local-type>integer</local-type>
+            <aggregation>Sum</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;sint64&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>DIRECTIONS_TO_MINE</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[DIRECTIONS_TO_MINE]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>DIRECTIONS_TO_MINE</remote-alias>
+            <ordinal>57</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='column'>
+            <remote-name>NEAREST_TOWN</remote-name>
+            <remote-type>129</remote-type>
+            <local-name>[NEAREST_TOWN]</local-name>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias>NEAREST_TOWN</remote-alias>
+            <ordinal>58</ordinal>
+            <local-type>string</local-type>
+            <aggregation>Count</aggregation>
+            <scale>1</scale>
+            <width>1073741823</width>
+            <contains-null>true</contains-null>
+            <collation flag='0' name='LEN_RUS' />
+            <attributes>
+              <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+              <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>8</attribute>
+              <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+            </attributes>
+          </metadata-record>
+          <metadata-record class='capability'>
+            <remote-name />
+            <remote-type>0</remote-type>
+            <parent-name>[Mines.txt]</parent-name>
+            <remote-alias />
+            <aggregation>Count</aggregation>
+            <contains-null>true</contains-null>
+            <attributes>
+              <attribute datatype='string' name='character-set'>&quot;UTF-8&quot;</attribute>
+              <attribute datatype='string' name='collation'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='field-delimiter'>&quot;|&quot;</attribute>
+              <attribute datatype='string' name='header-row'>&quot;true&quot;</attribute>
+              <attribute datatype='string' name='locale'>&quot;en_US&quot;</attribute>
+              <attribute datatype='string' name='single-char'>&quot;&quot;</attribute>
+            </attributes>
+          </metadata-record>
+        </metadata-records>
+      </connection>
+      <aliases enabled='yes' />
+      <column caption='Assess Ctrl No' datatype='integer' hidden='true' name='[ASSESS_CTRL_NO]' role='measure' type='quantitative' />
+      <column caption='Avg Mine Height' datatype='integer' hidden='true' name='[AVG_MINE_HEIGHT]' role='measure' type='quantitative' />
+      <column caption='Bom State Cd' datatype='integer' hidden='true' name='[BOM_STATE_CD]' role='measure' type='quantitative' />
+      <column caption='Coal Metal Ind' datatype='string' name='[COAL_METAL_IND]' role='dimension' type='nominal' />
+      <column caption='Company Type' datatype='string' hidden='true' name='[COMPANY_TYPE]' role='dimension' type='nominal' />
+      <column caption='Cong Dist Cd' datatype='integer' hidden='true' name='[CONG_DIST_CD]' role='measure' type='quantitative' />
+      <column caption='Current 103I' datatype='string' hidden='true' name='[CURRENT_103I]' role='dimension' type='nominal' />
+      <column caption='Current 103I Dt' datatype='date' hidden='true' name='[CURRENT_103I_DT]' role='dimension' type='ordinal' />
+      <column caption='Current Controller Begin Dt' datatype='date' hidden='true' name='[CURRENT_CONTROLLER_BEGIN_DT]' role='dimension' type='ordinal' />
+      <column caption='Current Controller Id' datatype='string' hidden='true' name='[CURRENT_CONTROLLER_ID]' role='dimension' type='nominal' />
+      <column caption='Current Controller Name' datatype='string' hidden='true' name='[CURRENT_CONTROLLER_NAME]' role='dimension' type='nominal' />
+      <column caption='Current Mine Name' datatype='string' name='[CURRENT_MINE_NAME]' role='dimension' type='nominal' />
+      <column caption='Current Mine Status' datatype='string' name='[CURRENT_MINE_STATUS]' role='dimension' type='nominal' />
+      <column caption='Current Mine Type' datatype='string' name='[CURRENT_MINE_TYPE]' role='dimension' type='nominal' />
+      <column caption='Current Operator Id' datatype='string' name='[CURRENT_OPERATOR_ID]' role='dimension' type='nominal' />
+      <column caption='Current Operator Name' datatype='string' name='[CURRENT_OPERATOR_NAME]' role='dimension' type='nominal' />
+      <column caption='Current Status Dt' datatype='date' hidden='true' name='[CURRENT_STATUS_DT]' role='dimension' type='ordinal' />
+      <column aggregation='Avg' caption='Longitude adjusted' datatype='real' name='[Calculation_415457070064381952]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+        <calculation class='tableau' formula='[LONGITUDE]*-1' />
+      </column>
+      <column caption='Days Per Week' datatype='integer' hidden='true' name='[DAYS_PER_WEEK]' role='dimension' type='quantitative' />
+      <column caption='Directions To Mine' datatype='string' hidden='true' name='[DIRECTIONS_TO_MINE]' role='dimension' type='nominal' />
+      <column caption='District' datatype='string' hidden='true' name='[DISTRICT]' role='dimension' type='nominal' />
+      <column caption='Fips Cnty Cd' datatype='integer' hidden='true' name='[FIPS_CNTY_CD]' role='measure' type='quantitative' />
+      <column caption='Fips Cnty Nm' datatype='string' hidden='true' name='[FIPS_CNTY_NM]' role='dimension' type='nominal' />
+      <column caption='Highwall Miner Used' datatype='string' hidden='true' name='[HIGHWALL_MINER_USED]' role='dimension' type='nominal' />
+      <column caption='Hours Per Shift' datatype='integer' hidden='true' name='[HOURS_PER_SHIFT]' role='measure' type='quantitative' />
+      <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+      <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+      <column caption='Maint Shifts Per Day' datatype='integer' hidden='true' name='[MAINT_SHIFTS_PER_DAY]' role='dimension' type='quantitative' />
+      <column caption='Methane Liberation' datatype='integer' hidden='true' name='[METHANE_LIBERATION]' role='measure' type='quantitative' />
+      <column caption='Miles From Office' datatype='integer' hidden='true' name='[MILES_FROM_OFFICE]' role='measure' type='quantitative' />
+      <column caption='Miners Rep Ind' datatype='string' hidden='true' name='[MINERS_REP_IND]' role='dimension' type='nominal' />
+      <column caption='Mine Gas Category Cd' datatype='string' hidden='true' name='[MINE_GAS_CATEGORY_CD]' role='dimension' type='nominal' />
+      <column caption='Mine Id' datatype='integer' name='[MINE_ID]' role='dimension' type='ordinal' />
+      <column caption='Multiple Pits' datatype='string' hidden='true' name='[MULTIPLE_PITS]' role='dimension' type='nominal' />
+      <column caption='Nearest Town' datatype='string' hidden='true' name='[NEAREST_TOWN]' role='dimension' type='nominal' />
+      <column caption='No Employees' datatype='integer' hidden='true' name='[NO_EMPLOYEES]' role='measure' type='quantitative' />
+      <column caption='No Nonproducing Pits' datatype='integer' hidden='true' name='[NO_NONPRODUCING_PITS]' role='measure' type='quantitative' />
+      <column caption='No Producing Pits' datatype='integer' hidden='true' name='[NO_PRODUCING_PITS]' role='measure' type='quantitative' />
+      <column caption='No Tailing Ponds' datatype='integer' hidden='true' name='[NO_TAILING_PONDS]' role='measure' type='quantitative' />
+      <column datatype='integer' name='[Number of Records]' role='measure' type='quantitative' user:auto-column='numrec'>
+        <calculation class='tableau' formula='1' />
+      </column>
+      <column caption='Office Cd' datatype='string' hidden='true' name='[OFFICE_CD]' role='dimension' type='nominal' />
+      <column caption='Office Name' datatype='string' hidden='true' name='[OFFICE_NAME]' role='dimension' type='nominal' />
+      <column caption='Part48 Training' datatype='string' hidden='true' name='[PART48_TRAINING]' role='dimension' type='nominal' />
+      <column caption='Pillar Recovery Used' datatype='string' hidden='true' name='[PILLAR_RECOVERY_USED]' role='dimension' type='nominal' />
+      <column caption='Portable Fips St Cd' datatype='integer' hidden='true' name='[PORTABLE_FIPS_ST_CD]' role='measure' type='quantitative' />
+      <column caption='Portable Operation' datatype='string' hidden='true' name='[PORTABLE_OPERATION]' role='dimension' type='nominal' />
+      <column caption='Primary Canvass' datatype='string' hidden='true' name='[PRIMARY_CANVASS]' role='dimension' type='nominal' />
+      <column caption='Primary Canvass Cd' datatype='integer' hidden='true' name='[PRIMARY_CANVASS_CD]' role='measure' type='quantitative' />
+      <column caption='Primary Sic' datatype='string' hidden='true' name='[PRIMARY_SIC]' role='dimension' type='nominal' />
+      <column caption='Primary Sic Cd' datatype='integer' hidden='true' name='[PRIMARY_SIC_CD]' role='measure' type='quantitative' />
+      <column caption='Primary Sic Cd 1' datatype='integer' hidden='true' name='[PRIMARY_SIC_CD_1]' role='measure' type='quantitative' />
+      <column caption='Primary Sic Cd Sfx' datatype='integer' hidden='true' name='[PRIMARY_SIC_CD_SFX]' role='measure' type='quantitative' />
+      <column caption='Prod Shifts Per Day' datatype='integer' hidden='true' name='[PROD_SHIFTS_PER_DAY]' role='dimension' type='quantitative' />
+      <column caption='Safety Committee Ind' datatype='string' hidden='true' name='[SAFETY_COMMITTEE_IND]' role='dimension' type='nominal' />
+      <column caption='Secondary Canvass' datatype='string' hidden='true' name='[SECONDARY_CANVASS]' role='dimension' type='nominal' />
+      <column caption='Secondary Canvass Cd' datatype='integer' hidden='true' name='[SECONDARY_CANVASS_CD]' role='measure' type='quantitative' />
+      <column caption='Secondary Sic' datatype='string' hidden='true' name='[SECONDARY_SIC]' role='dimension' type='nominal' />
+      <column caption='Secondary Sic Cd' datatype='integer' hidden='true' name='[SECONDARY_SIC_CD]' role='measure' type='quantitative' />
+      <column caption='Secondary Sic Cd 1' datatype='integer' hidden='true' name='[SECONDARY_SIC_CD_1]' role='measure' type='quantitative' />
+      <column caption='Secondary Sic Cd Sfx' datatype='integer' hidden='true' name='[SECONDARY_SIC_CD_SFX]' role='measure' type='quantitative' />
+      <column caption='State' datatype='string' name='[STATE]' role='dimension' semantic-role='[State].[Name]' type='nominal' />
+      <group name='[current mine status]' name-style='unqualified' user:ui-builder='identity-set'>
+        <groupfilter function='intersection'>
+          <groupfilter function='level-members' level='[CURRENT_MINE_STATUS]' />
+          <groupfilter function='union'>
+            <groupfilter expression='false' function='filter'>
+              <groupfilter function='level-members' level='[CURRENT_MINE_STATUS]' />
+            </groupfilter>
+          </groupfilter>
+        </groupfilter>
+      </group>
+      <extract count='-1' enabled='true' units='records'>
+        <connection class='dataengine' dbname='//10.0.2.4/qemu/home/gilles/documents/websites/support.gillespilon.ca/fil/tableau/msha/Mines.tde' schema='Extract' tablename='Extract' update-time='07/25/2017 08:06:23 PM'>
+          <relation name='Extract' table='[Extract].[Extract]' type='table' />
+          <calculations>
+            <calculation column='[Number of Records]' formula='1' />
+          </calculations>
+          <refresh>
+            <refresh-event add-from-file-path='' increment-value='%null%' refresh-type='create' rows-inserted='86880' timestamp-start='2017-07-25 20:06:23.073' />
+          </refresh>
+          <metadata-records>
+            <metadata-record class='column'>
+              <remote-name>COAL_METAL_IND</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[COAL_METAL_IND]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>COAL_METAL_IND</remote-alias>
+              <ordinal>0</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>2</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;C&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;M&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+                <statistic aggregation='Median' datatype='string'>&quot;M&quot;</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>0</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CURRENT_MINE_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CURRENT_MINE_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CURRENT_MINE_NAME</remote-alias>
+              <ordinal>1</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>63674</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot; \#1&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zyucks Pit And Plant&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>6</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CURRENT_MINE_STATUS</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CURRENT_MINE_STATUS]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CURRENT_MINE_STATUS</remote-alias>
+              <ordinal>2</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>7</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Abandoned&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Temporarily Idled&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CURRENT_MINE_TYPE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CURRENT_MINE_TYPE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CURRENT_MINE_TYPE</remote-alias>
+              <ordinal>3</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>4</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;Facility&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Underground&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86542</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CURRENT_OPERATOR_ID</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CURRENT_OPERATOR_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CURRENT_OPERATOR_ID</remote-alias>
+              <ordinal>4</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>47745</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>true</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;*No_LID&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;P32338&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86197</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>CURRENT_OPERATOR_NAME</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[CURRENT_OPERATOR_NAME]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>CURRENT_OPERATOR_NAME</remote-alias>
+              <ordinal>5</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>50006</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot; 75th Street Quarry and Recycling&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;Zzyzx Mining Corp&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>5</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>4</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LATITUDE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LATITUDE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LATITUDE</remote-alias>
+              <ordinal>6</ordinal>
+              <family>Mines.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>24110</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>-14.27563</statistic>
+                <statistic aggregation='Max' datatype='real'>90.999722000000006</statistic>
+                <statistic aggregation='Count' datatype='integer'>38844</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>8</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>LONGITUDE</remote-name>
+              <remote-type>5</remote-type>
+              <local-name>[LONGITUDE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>LONGITUDE</remote-alias>
+              <ordinal>7</ordinal>
+              <family>Mines.txt</family>
+              <local-type>real</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>27144</approx-count>
+              <contains-null>true</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='real'>0.00027799999999999998</statistic>
+                <statistic aggregation='Max' datatype='real'>180.999</statistic>
+                <statistic aggregation='Count' datatype='integer'>38846</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;array&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>8</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;double&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>MINE_ID</remote-name>
+              <remote-type>3</remote-type>
+              <local-name>[MINE_ID]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>MINE_ID</remote-alias>
+              <ordinal>8</ordinal>
+              <family>Mines.txt</family>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>86880</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Sum' datatype='real'>231382066741.0</statistic>
+                <statistic aggregation='Avg' datatype='real'>2663237.4164479743</statistic>
+                <statistic aggregation='Min' datatype='integer'>100003</statistic>
+                <statistic aggregation='Max' datatype='integer'>6900010</statistic>
+                <statistic aggregation='Stdev' datatype='real'>1489145.3193162449</statistic>
+                <statistic aggregation='StdevP' datatype='real'>1489136.7491642858</statistic>
+                <statistic aggregation='Var' datatype='real'>2217553782041.481</statistic>
+                <statistic aggregation='VarP' datatype='real'>2217528257711.5771</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+                <statistic aggregation='Median' datatype='integer'>2602528</statistic>
+                <statistic aggregation='SumXSqr' datatype='real'>8.0888423266967539e+17</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>7</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (unique)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint32&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>Number of Records</remote-name>
+              <remote-type>16</remote-type>
+              <local-name>[Number of Records]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>Number of Records</remote-alias>
+              <ordinal>9</ordinal>
+              <local-type>integer</local-type>
+              <aggregation>Sum</aggregation>
+              <approx-count>1</approx-count>
+              <contains-null>false</contains-null>
+              <statistics>
+                <statistic aggregation='Min' datatype='integer'>1</statistic>
+                <statistic aggregation='Max' datatype='integer'>1</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+                <statistic aggregation='Median' datatype='integer'>1</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteMetadata (ordered)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>1</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;sint8&quot;</attribute>
+              </attributes>
+            </metadata-record>
+            <metadata-record class='column'>
+              <remote-name>STATE</remote-name>
+              <remote-type>129</remote-type>
+              <local-name>[STATE]</local-name>
+              <parent-name>[Extract]</parent-name>
+              <remote-alias>STATE</remote-alias>
+              <ordinal>10</ordinal>
+              <family>Mines.txt</family>
+              <local-type>string</local-type>
+              <aggregation>Count</aggregation>
+              <approx-count>55</approx-count>
+              <scale>1</scale>
+              <width>1073741823</width>
+              <contains-null>false</contains-null>
+              <collation flag='0' name='LEN_RUS' />
+              <statistics>
+                <statistic aggregation='Min' datatype='string'>&quot;AK&quot;</statistic>
+                <statistic aggregation='Max' datatype='string'>&quot;WY&quot;</statistic>
+                <statistic aggregation='Count' datatype='integer'>86880</statistic>
+              </statistics>
+              <attributes>
+                <attribute datatype='string' name='DebugRemoteCollation'>&quot;en_US&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (comparable)'>true</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (compression)'>&quot;heap&quot;</attribute>
+                <attribute datatype='boolean' name='DebugRemoteMetadata (distinct)'>true</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (size)'>4294967292</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (sort-position)'>3</attribute>
+                <attribute datatype='string' name='DebugRemoteMetadata (sort-sense)'>&quot;asc&quot;</attribute>
+                <attribute datatype='integer' name='DebugRemoteMetadata (storagewidth)'>2</attribute>
+                <attribute datatype='string' name='DebugRemoteType'>&quot;str&quot;</attribute>
+              </attributes>
+            </metadata-record>
+          </metadata-records>
+        </connection>
+      </extract>
+      <layout dim-ordering='alphabetic' dim-percentage='0.425033' group-percentage='0.205997' measure-ordering='alphabetic' measure-percentage='0.36897' show-structure='true' />
+      <semantic-values>
+        <semantic-value key='[Country].[Name]' value='&quot;United States&quot;' />
+      </semantic-values>
+      <field-sort-info field-sort-order-type='custom-order'>
+        <field-sort-custom-order field='MINE_ID' />
+        <field-sort-custom-order field='CURRENT_MINE_NAME' />
+        <field-sort-custom-order field='COAL_METAL_IND' />
+        <field-sort-custom-order field='CURRENT_MINE_TYPE' />
+        <field-sort-custom-order field='CURRENT_MINE_STATUS' />
+        <field-sort-custom-order field='CURRENT_STATUS_DT' />
+        <field-sort-custom-order field='CURRENT_CONTROLLER_ID' />
+        <field-sort-custom-order field='CURRENT_CONTROLLER_NAME' />
+        <field-sort-custom-order field='CURRENT_OPERATOR_ID' />
+        <field-sort-custom-order field='CURRENT_OPERATOR_NAME' />
+        <field-sort-custom-order field='STATE' />
+        <field-sort-custom-order field='BOM_STATE_CD' />
+        <field-sort-custom-order field='FIPS_CNTY_CD' />
+        <field-sort-custom-order field='FIPS_CNTY_NM' />
+        <field-sort-custom-order field='CONG_DIST_CD' />
+        <field-sort-custom-order field='COMPANY_TYPE' />
+        <field-sort-custom-order field='CURRENT_CONTROLLER_BEGIN_DT' />
+        <field-sort-custom-order field='DISTRICT' />
+        <field-sort-custom-order field='OFFICE_CD' />
+        <field-sort-custom-order field='OFFICE_NAME' />
+        <field-sort-custom-order field='ASSESS_CTRL_NO' />
+        <field-sort-custom-order field='PRIMARY_SIC_CD' />
+        <field-sort-custom-order field='PRIMARY_SIC' />
+        <field-sort-custom-order field='PRIMARY_SIC_CD_1' />
+        <field-sort-custom-order field='PRIMARY_SIC_CD_SFX' />
+        <field-sort-custom-order field='SECONDARY_SIC_CD' />
+        <field-sort-custom-order field='SECONDARY_SIC' />
+        <field-sort-custom-order field='SECONDARY_SIC_CD_1' />
+        <field-sort-custom-order field='SECONDARY_SIC_CD_SFX' />
+        <field-sort-custom-order field='PRIMARY_CANVASS_CD' />
+        <field-sort-custom-order field='PRIMARY_CANVASS' />
+        <field-sort-custom-order field='SECONDARY_CANVASS_CD' />
+        <field-sort-custom-order field='SECONDARY_CANVASS' />
+        <field-sort-custom-order field='CURRENT_103I' />
+        <field-sort-custom-order field='CURRENT_103I_DT' />
+        <field-sort-custom-order field='PORTABLE_OPERATION' />
+        <field-sort-custom-order field='PORTABLE_FIPS_ST_CD' />
+        <field-sort-custom-order field='DAYS_PER_WEEK' />
+        <field-sort-custom-order field='HOURS_PER_SHIFT' />
+        <field-sort-custom-order field='PROD_SHIFTS_PER_DAY' />
+        <field-sort-custom-order field='MAINT_SHIFTS_PER_DAY' />
+        <field-sort-custom-order field='NO_EMPLOYEES' />
+        <field-sort-custom-order field='PART48_TRAINING' />
+        <field-sort-custom-order field='LONGITUDE' />
+        <field-sort-custom-order field='Calculation_415457070064381952' />
+        <field-sort-custom-order field='LATITUDE' />
+        <field-sort-custom-order field='AVG_MINE_HEIGHT' />
+        <field-sort-custom-order field='MINE_GAS_CATEGORY_CD' />
+        <field-sort-custom-order field='METHANE_LIBERATION' />
+        <field-sort-custom-order field='NO_PRODUCING_PITS' />
+        <field-sort-custom-order field='NO_NONPRODUCING_PITS' />
+        <field-sort-custom-order field='NO_TAILING_PONDS' />
+        <field-sort-custom-order field='PILLAR_RECOVERY_USED' />
+        <field-sort-custom-order field='HIGHWALL_MINER_USED' />
+        <field-sort-custom-order field='MULTIPLE_PITS' />
+        <field-sort-custom-order field='MINERS_REP_IND' />
+        <field-sort-custom-order field='SAFETY_COMMITTEE_IND' />
+        <field-sort-custom-order field='MILES_FROM_OFFICE' />
+        <field-sort-custom-order field='DIRECTIONS_TO_MINE' />
+        <field-sort-custom-order field='NEAREST_TOWN' />
+      </field-sort-info>
+      <filter class='categorical' column='[COAL_METAL_IND]' filter-group='2'>
+        <groupfilter function='member' level='[COAL_METAL_IND]' member='&quot;M&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+      <filter class='categorical' column='[CURRENT_MINE_STATUS]' filter-group='2'>
+        <groupfilter function='member' level='[CURRENT_MINE_STATUS]' member='&quot;Active&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+      </filter>
+    </datasource>
+  </datasources>
+  <mapsources>
+    <mapsource name='Tableau' />
+  </mapsources>
+  <worksheets>
+    <worksheet name='map of mines'>
+      <table>
+        <view>
+          <datasources>
+            <datasource caption='Mines' name='federated.0ji7vf51y9cb8415qgiwb0sjrl6p' />
+          </datasources>
+          <mapsources>
+            <mapsource name='Tableau' />
+          </mapsources>
+          <datasource-dependencies datasource='federated.0ji7vf51y9cb8415qgiwb0sjrl6p'>
+            <column caption='Coal Metal Ind' datatype='string' name='[COAL_METAL_IND]' role='dimension' type='nominal' />
+            <column caption='Current Mine Name' datatype='string' name='[CURRENT_MINE_NAME]' role='dimension' type='nominal' />
+            <column caption='Current Mine Status' datatype='string' name='[CURRENT_MINE_STATUS]' role='dimension' type='nominal' />
+            <column caption='Current Operator Id' datatype='string' name='[CURRENT_OPERATOR_ID]' role='dimension' type='nominal' />
+            <column caption='Current Operator Name' datatype='string' name='[CURRENT_OPERATOR_NAME]' role='dimension' type='nominal' />
+            <column aggregation='Avg' caption='Longitude adjusted' datatype='real' name='[Calculation_415457070064381952]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative'>
+              <calculation class='tableau' formula='[LONGITUDE]*-1' />
+            </column>
+            <column aggregation='Avg' caption='Latitude' datatype='real' name='[LATITUDE]' role='measure' semantic-role='[Geographical].[Latitude]' type='quantitative' />
+            <column aggregation='Avg' caption='Longitude' datatype='real' name='[LONGITUDE]' role='measure' semantic-role='[Geographical].[Longitude]' type='quantitative' />
+            <column-instance column='[CURRENT_MINE_NAME]' derivation='Attribute' name='[attr:CURRENT_MINE_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CURRENT_OPERATOR_ID]' derivation='Attribute' name='[attr:CURRENT_OPERATOR_ID:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CURRENT_OPERATOR_NAME]' derivation='Attribute' name='[attr:CURRENT_OPERATOR_NAME:nk]' pivot='key' type='nominal' />
+            <column-instance column='[Calculation_415457070064381952]' derivation='Avg' name='[avg:Calculation_415457070064381952:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[LATITUDE]' derivation='Avg' name='[avg:LATITUDE:qk]' pivot='key' type='quantitative' />
+            <column-instance column='[COAL_METAL_IND]' derivation='None' name='[none:COAL_METAL_IND:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CURRENT_MINE_STATUS]' derivation='None' name='[none:CURRENT_MINE_STATUS:nk]' pivot='key' type='nominal' />
+            <column-instance column='[CURRENT_OPERATOR_ID]' derivation='None' name='[none:CURRENT_OPERATOR_ID:nk]' pivot='key' type='nominal' />
+          </datasource-dependencies>
+          <filter class='categorical' column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:COAL_METAL_IND:nk]'>
+            <groupfilter function='level-members' level='[none:COAL_METAL_IND:nk]' user:ui-enumeration='all' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_MINE_STATUS:nk]'>
+            <groupfilter function='member' level='[none:CURRENT_MINE_STATUS:nk]' member='&quot;Active&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <filter class='categorical' column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_OPERATOR_ID:nk]'>
+            <groupfilter function='member' level='[none:CURRENT_OPERATOR_ID:nk]' member='&quot;0114165&quot;' user:ui-domain='database' user:ui-enumeration='inclusive' user:ui-marker='enumerate' />
+          </filter>
+          <slices>
+            <column>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_MINE_STATUS:nk]</column>
+            <column>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:COAL_METAL_IND:nk]</column>
+            <column>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_OPERATOR_ID:nk]</column>
+          </slices>
+          <aggregation value='false' />
+        </view>
+        <style>
+          <style-rule element='axis'>
+            <encoding attr='space' class='0' field='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[avg:Calculation_415457070064381952:qk]' field-type='quantitative' max='-5632797.8537394032' min='-14495094.902101815' projection='EPSG:3857' range-type='fixed' scope='cols' type='space' />
+            <encoding attr='space' class='0' field='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[avg:LATITUDE:qk]' field-type='quantitative' max='7017457.9548500702' min='2487493.9105573846' projection='EPSG:3857' range-type='fixed' scope='rows' type='space' />
+          </style-rule>
+          <style-rule element='map-layer'>
+            <format attr='enabled' id='tab_base' value='true' />
+            <format attr='enabled' id='um_lcover' value='true' />
+            <format attr='enabled' id='tab_coastline' value='false' />
+            <format attr='enabled' id='pp2_line' value='false' />
+            <format attr='enabled' id='light_adm0_bnd' value='false' />
+            <format attr='enabled' id='light_adm0_lbl' value='false' />
+            <format attr='enabled' id='um_adm0_bnd' value='true' />
+            <format attr='enabled' id='um_adm0_lbl' value='true' />
+            <format attr='enabled' id='light_pp2_statebounds' value='false' />
+            <format attr='enabled' id='light_pp2_statelabels' value='false' />
+            <format attr='enabled' id='pp2_adminlabels' value='false' />
+            <format attr='enabled' id='pp2_statebounds' value='true' />
+            <format attr='enabled' id='pp2_statelabels' value='true' />
+            <format attr='enabled' id='countybounds' value='false' />
+            <format attr='enabled' id='countylabels' value='false' />
+            <format attr='enabled' id='zipbounds' value='false' />
+            <format attr='enabled' id='ziplabels' value='false' />
+            <format attr='enabled' id='tab_areabounds' value='false' />
+            <format attr='enabled' id='tab_arealabels' value='false' />
+            <format attr='enabled' id='tab_msabounds' value='false' />
+            <format attr='enabled' id='tab_msalabels' value='false' />
+          </style-rule>
+          <style-rule element='map'>
+            <format attr='washout' value='0.0' />
+          </style-rule>
+        </style>
+        <panes>
+          <pane id='2' selection-relaxation-option='selection-relaxation-disallow'>
+            <view>
+              <breakdown value='auto' />
+            </view>
+            <mark class='Automatic' />
+            <encodings>
+              <tooltip column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[attr:CURRENT_MINE_NAME:nk]' />
+              <tooltip column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[attr:CURRENT_OPERATOR_ID:nk]' />
+              <tooltip column='[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[attr:CURRENT_OPERATOR_NAME:nk]' />
+            </encodings>
+          </pane>
+        </panes>
+        <rows>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[avg:LATITUDE:qk]</rows>
+        <cols>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[avg:Calculation_415457070064381952:qk]</cols>
+      </table>
+    </worksheet>
+  </worksheets>
+  <windows source-height='30'>
+    <window class='worksheet' maximized='true' name='map of mines'>
+      <cards>
+        <edge name='left'>
+          <strip size='160'>
+            <card type='pages' />
+            <card type='filters' />
+            <card type='marks' />
+          </strip>
+        </edge>
+        <edge name='top'>
+          <strip size='2147483647'>
+            <card type='columns' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='rows' />
+          </strip>
+          <strip size='2147483647'>
+            <card type='title' />
+          </strip>
+        </edge>
+      </cards>
+      <viewpoint>
+        <highlight>
+          <color-one-way>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:COAL_METAL_IND:nk]</field>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_CONTROLLER_NAME:nk]</field>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_MINE_NAME:nk]</field>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_MINE_STATUS:nk]</field>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_OPERATOR_ID:nk]</field>
+            <field>[federated.0ji7vf51y9cb8415qgiwb0sjrl6p].[none:CURRENT_OPERATOR_NAME:nk]</field>
+          </color-one-way>
+        </highlight>
+      </viewpoint>
+    </window>
+  </windows>
+  <thumbnails>
+    <thumbnail height='192' name='map of mines' width='192'>
+      iVBORw0KGgoAAAANSUhEUgAAAMAAAADACAYAAABS3GwHAAAACXBIWXMAAA7DAAAOwwHHb6hk
+      AAAgAElEQVR4nNS9SZPkuJUu+mHg4O4RkUONqkq1WlrIJPWzNrvv/6/f3feiZS213b4aas4x
+      ItydJKa3AA54CIIeUepWZglmmeHuJEEMB2cexP39fdBaYxxHeO8BAM45hBAghEAIAbzR7wAw
+      WQPnHWqt1S2UlPkZALk/ev6hxu+1zsE4AwDomhYCYtWP9x7WO3jv4ZyD1hrOe9BtAgJd0+ax
+      lO/Yej8ff3m99vuP6ZfGeemex67X/1QffM9pfEIIHA4HGGPQNE2+R0oJYwyUUpimCVrr6nxy
+      f97j1ZtXlXfGv1optLpZXJumCU3TXJwL//3H7JfWWqPrutyBcw7DMOSbLr2sbzsYazHaafGC
+      vonAL4TYHNRjNsR7n+9rtIaQApOZMJgJrW7QquVCBQDBW/jgIaWEtRaQAkAaAwKsd3mBywO+
+      tWBSyhUw0d/yINUWmX/mGyWlhHNu1T9do/nX3veY9tABCCGsrvH5hBAgpYRMiExKievra3jv
+      85iNMQghYBxHOOfymKWUaJoGSqnVO9u2xThNi7Uv14WaMQZaa8gET1v7xX//MfuV39T3PZqm
+      Qdd1uXOiCPzFJUXQSq1+o8G69DwtJvW1tRllKw+LlgqNbiCFxGQNRjMt3ysE+qZD13SAEAje
+      Q0Dk93vvMVkD4+yibw5k3vvFePn4+RpcQgzlQtfmX/bH58wBgdaSA8DW2JxbUuMSYMqx8Hu2
+      gKmkBkDEyAQbbdvicDjkPugA9H2/An7qzxi7Pe80DO89jDEQQmQKVK4P36/yHbV5lnMKIcwH
+      gG46nU55UaSUUErlE7kF6Lu2hxRzV4OZ4LzHMI04jQNO4xlTYl9+bCsn0iiNXdtBQEDJ5QLT
+      4jRao9Eaqm3gGVBw1m00E3zwq0XZwrC0BjXg3QLKS43W7tI7a/2UB4iPmwPcQ0BQ9kkAze8j
+      KkRtHMf8zzmH8/m8Wge6b2v+UkrcXF9DKwUl1RowAzKF8d5fZKf4etR+53PzDBnzv4veQwjo
+      +x739/c4HA75MNCpLrEYnT5ZLKCSElopdE1kNawXQKhvQI3Ml5Mr2QMAaJsGQFg8z1urG0gh
+      cJwMGqVhnV1cN87CeY9911f5R/5b+ZdILL/v0hz4+vJWjpmzFoSAOBUu31fOvbY/5Vj5WMo9
+      3aJE1JxzuL+/BwAMw7C4l9g5uu90OmG/31f3/Gp/gJ0M0CQsHjziqwOkVJDFWHgrERVRga01
+      By7vlyxv1Fpjt9stJs1JcTkQemHftvl7o3Q8vUqj0Q36pkXfdvm5kl/jjZO0GtvB2SGt9Gpc
+      vGmlcbU/wDsHZyx0QZIVe/djWJyy8fGUbGIJdA9RBQIi/p3PuUZlyrXj7ylZkofmQf1dYk/5
+      tWmaME1TlLMqbRgGjONYnbsQAm07KyOkkDNFKN5ZGwf/XEOOl8a/QmblzZx/67oObduiaZqF
+      IAQgs0bUkZJReifef4sHvvRb7S8f7CVer+Td6a9SCsF57Pd7jOdxca3VzQojcH57i7zyd/Px
+      bfH/dO0x/dJz5X1lv7UDx4G9djDL9/KDzilP7bDWMG/f9xAJ87uC1QwhYCoEXd5I8VJDOlsU
+      i/fPx12u7daalkgUqBwAakop9H2fvzvnMo+plMqqUj6oRmuEEGALYayUIcpB8kGpJFSXpJlj
+      wtqicDLH3xFCwOFwiKpTgaimUwrhgrDLP1/iZS8BcXntUl8PsUb8vodI/aXn+XN8zTn7yvvZ
+      ooQEcG3bQiuF8/m86JeoibUWb9++3WRta2PhY+B7WMLbY5BqOd5a2zwAHBuO45h5PCFEPu3l
+      qY2CqYSsYOwaduSDp3u2FoUEmRLD8T5qv9G9IQQ8uXmCYBzG8wCpFEZrFou31UrMuEW9ttbx
+      oVZDCPy9JYBuAeUWoG0dRuqXY/9L7ygxc8kV8Gu0XwS8AGCt3aRG/NmSugFYaIIeWvtyj/j6
+      lfPcPADUtNYLzF9uRrloUsis/qzJDJfIcTlQ+stJHD3LN/sSZSgXpO97XF9dI1gH5x3OZly8
+      pzanWquxI485II8dJ39PbX617xxzXzqUZb81ylxbgxIhDcOAEAKapOwoKTLdT6zQOI75GaVU
+      Vp+GEOCSAdNvrF1trbYQR22u5Xd672UdE+YDoLXOai++2GVrdQO/QTr5ZLixQgixwu4lFiiB
+      szwEtfGU/C/99d6jazvYEC3GxtpI6aYBfdMt7q8tIIBN7VM5Rv5bba58TFvv3XoHreMlKrO1
+      Xz8G24cQMCVqKYRAo/RiDaSU6Pse0zStngWiWpQ4B2stmqbJFmNCqkoo+OAxmgkiicICS4Mg
+      b+V8Lq0VrW+N0l08ANRZ27aZfAkRDRPlAtFnIQR0xW7AAaDsv1SF0rUaWef98b+XWKLa56Zp
+      cL67Q9s0MM7C2wiAJz+gb1tIyMX7yz4uWXH5/Mrx8XtpE2vAX2s1oN1aH35/jaevPbdFNSJl
+      FxjMBCEElJDZBYK7cux2O1hrV94EBCPW2gVrRH374IEAQAACIhsqhQc6NoaaSpj/re0Xv0b7
+      xX9/kAUC4gaN45hN0iT1k+mbD2prM+jFlllhaWEe2kC+EbWD8tBz/F38+/XVFZq2gZmmbJQJ
+      CDhPIwLWlKNc6BoW4uxaSdU4EihVnrUDVPKwNZ6+vGfrMJbAsiUwc4qarwmAd8efeffuXTZ8
+      EXbv+x5d1y3Ga4zJ/ZLf0DiO2O/3CH4ec7QJrBEnH3fJKfA1qa1NjUvI+4BHNFKD7vf7FZ9K
+      Ayxlg3IQ9IxJ0jxZYYm8cmvdQ5ipRk1qfDM1mrh1FsbNghgSVmu7Do7ps0MI8G7pxlH+K8dR
+      XquxR6WqsZxTjd99CFNvYb2ttaG2tV/8IOW5QKBtGhy6XWYRQ5hltuPxiPP5jGEYsm9QKc9x
+      Nam1FufzOdudZhkCmX2O777sjLi1duU6XoLNRx0AIUR2glJKLTaXswC1hVy4ECAKO6fxjPM0
+      pt+iawJ3uuLvrQH6FivF76l9N85iNBPO00gXICDgfDyUUsyqVBs8fPALgCr1+FsuIvy3Gkau
+      YWi+lrR+W1S1xHwlRa3dUwLR1nM1WYHvtWb7z8dlrc3/SEVaynnUjscjQohOcSEE3Nzc4Orq
+      CkrKwsFxrQ3aQkJl4/tV7ht/9lEHgJoxZqHK4i+rDaAcuPdp8AASh5FVppM1Kx71Ehnfwshl
+      H/xvkxZXqRlw+7aFEAJN22IaR+gk4Jk0HqCu5uPfa8Bca6U/yqVGPOul+fIx1BAF/7fFJpSt
+      treX1Ijlb+RWzx0ra+NXSmUrMrHYQPT6PXQ7SCEhxBKQy3FtzeUS9SsPzo86APv9Pgs8HMhK
+      jUgNQwkRbQS7NhrXAgJM8s9RMhm/sNywWisxaTnxEvj5fUrK6AodGNBAYN/2aJRG28VDIIVE
+      17TzuArMCizJao0a8ftrJJyvFZ9vybrVMHqN3F9qfF1IAC3HskVVyOhZ66s2T07BuLNc2Ugr
+      U+vzIYrOf9u6Vo6r5jUKPFIIBmYSd3V1lf04SCjmrhI0gIcmpKTKrEeOHcASKGrtId52q9Ei
+      d8kviQMqHU7vA1SjYaZp9TxfxBpbw+8rqVBt/lubvEVd6f2lg9tDcy7fsaW+3mqkhiwPW7m/
+      pdcoYfktRMY9jcsD4LzDruuyh/HWnl9ChrReW9epbapBQwhZy3M8HrMKab/f4+rqKkddkYl6
+      mqYFNuMCLbcia6Wwb/sFpulku3jvJb6uXIASg5Zz2MJY1B/vk1w52l7DGpud+rYO9xYQ8zH9
+      GOzPf6vNqTxU/B4uM2zJDw+Nu3Z/jdeurSdfo2EY0HUdbm5ucDweM3tTe1/5HiByx6MxC0UJ
+      3be1piUnwjF/OW6+fhddIbTWs8tzwjqn0wn39/f5cPR9nwMX6FSXm1eS7EuYoZzYQwtXToy3
+      0p+k1l+pYgyIdg+tFcZpzFZwLlCVfdRYpBLIa++vaSdqPDufbwkE9Ay/l8dwbM299s7y/ksY
+      thxP2R/ZAQ6HQ9bybM3Dew9rbf5NSwXvHco31tht3kphl+9XuQ/54F5cGUSvPZqAUirrcO/v
+      7zGOI06nU96A0i4ghMgHolzcrfbQwdjCbDVAo8O7MqBgvbEhBDRKo08xw1FIi/7vNe1UDTi2
+      xl47hI9l3x6iXmUrD+SWCpA3Djg1x7hLY92aM1mFhRCruAD+2XuPt2/frvYKqN9f22fiTDhi
+      Lden5k8lxCOEYCEErq6uFlY+IC60tRbDMGQTd8nPESaqkaZLiwcAxtosJNP7ap/p+yWWoQSi
+      8zhGw6PYljWUVGi7Fk3X4nQ6LfrZMqvXxlnyoltYtXpQNyhHCeS8v6015s+UFPkSW/fY/Srn
+      RywygIWunxpZkct4AnpfGauxhUToX9u22QDXti1ubm6yyzVQd5UBHnCF4IPqui6HwvHf+aDo
+      GscmFBj90CKGELLeHQE50N46h75pV3zgpbHS3xrwRDYnHl6lYmyxDwECQKfbhW5fKwWbZBeO
+      HfmhLu0gJbbaItkl8G+xGFvXtvraYsH4b1us5GM/PzQWQhD0DClQeAsh4Hw+Z/aZj2uyBtZZ
+      SCxlyi2Wllhzkk0JMZP1GdiWix51AKiR5Y4E3tIXhi82yQ0U11kLmlgE3QM4jQNa3UClPvum
+      g1JrL9ByIUsLa8n38XuBGLHmgoMMMgO4kmqFJaSQ0BJwCgsKVwNK/u5Lh3WLdapRsdpcHwLK
+      0q+KC3yPiQ4rW239amPkgElrcHt7CyFE5u/LZ0hO4M+ONlIGeuulg8x/M8bg9evX+fdSecGf
+      4evwaJ2YlBI3Nzc4HA7Y7/eLTrNTV/DRsYwFm+92O7Rtu1JJlWRtmOYYUyVVzt9TqsJKDFAC
+      xCW+j1rXtOibDiK9i97J++bva9t2oeXijR/+HwtcZXsMpr/kOFcKzyVSKlnUx4750qG/xHZy
+      NqiGFGrv7psW0SluPbfae2ps3ENUk1OSH6cUxswOdV23CFIAAIE4acMsfOQgRX5ENAA+Kc6X
+      kq9Oo/QqhncLe5aCN59obfz0VykV45WbNrtp0LhLzFfLb8P74/z+3yI0bt1bYs7HaHdq63rp
+      +0P90Fhq/V56tvY8/31rv7RUKHvlh7c2D94uUd1y3j+KBeIv2O/3WcfLrYXO+5yYSgqJ4/GY
+      SSLJA4QZ+EDbJrpc+xAtwjzNSjmxcoKXjHDlxGvPSix9zmuaq0sbVxvTJSx36bdLslJJ3WoH
+      nLM8/Hvtt4faFstVQ0SXxnqJ4tTGopSKiBDIfkVN02CappyN4tI6lYfzEiL8mw4ANVJvhRCN
+      ZpSGUEBgNFN2e7DWLvxCaPNIhgAiC+KES7EEdd96ev7SRtTI9UN8+EPfyY99q/+yz4feswUE
+      l/rgmG9Lo1Hy00A9JUjZ70Pv5L9zHr/G19eeo/tKQbacP7VGaTQ7vQieIW8DnnOoBgdlnzV5
+      YLE+qyd/RBNCYLfbzbGfYRkMTyzFMAw5vyOAbBwRQuS/UghopeFDyBnfLgEZB4RL2Lj8XAIB
+      1+Zs8c5lar4asJZyQI3s8s+XsGhtzFtzKN9RY2lqyOExVOAhREPXSuRQazU2kp6pzZcAn1Tp
+      pC26vr5G13Wb8RS1fShtGfye/xYFoM4OhwPaNurLg0564BAWwfGn0wlaa7TJ+5KEaWPMbAlE
+      5P9q0jttrPMeTXLIK0ndFmDWEkjVsFf5G19UpVTOU/kQAJZY97G+O+V4qNUOem0Ml6jIjzkE
+      JeA/hN35b5ci5Lb2qxwf/f3Tn/6Epmnw+eef43A4wDmHrutyXPGl/SrfWbvXe//fPwA06a7r
+      oJTC6XSKGKGigSF98DiOWZCmE/5QVuEI/A6QoupK8Vjef4t9eeg6ZdAGsDLq/HcaqYkvjflv
+      aVtz+lv6JXvOjznEjx3bpdb3PV68eIHvvvsOz549y4igVKKUFIAQXin/1A7B/8gBoEZZ5Y7H
+      4+J3ftIB5HTaRNrevHmziAjjz9GzviC16gIf/JiNeux9ZbPWrrRf/513RYNcnTXgbev5xxzm
+      Lbmp9nzZQohGQ7KGl31syQGPbVvyAjDbCWjfKdaglGn495KaPLTP/6MHAIjY8ebmBuM4omka
+      GGNyjlE+KAIk7z1evXqFX/7ylwt+EgAmk6y0ghamtlmR1Yru1T4vWECM9grsKbLs+hDgrM32
+      iSykOQepSAUXEEIM2AmslxACkMm9qGqrFqN7AOC2WJGSTbgEqFsyQu3dtMZlIt1FfykuIwal
+      LDVPQsq8nmRBz32nNd9q9H5jTI4Gqx1M+nxzc5OvT9OU3ScuqZpLVqr8zL+H8DeqQR9qUkrs
+      djuEEHB3d7d4MQ2cMgfsdjt8/PHHePnyJV68eJGjzgBAKAmFh0hmTNMhpYQKMb5YpJoAUgj4
+      EP1KGqWjb5EUkBDwXkBpBRliHqOYkNWnZ2O/CAEQYrGp5QZrrRehlDWMy+e9xZ8671bZrh/b
+      an1vvTuEuSjHJUzONXpchnHe5/gN+kzX6ECUgm3Z6PpDXsE0lqZp8ObNm+zrw7kJ7gXAfdK2
+      5Jby89/lAPAXP3nyBOfzGdM0ZdUnHzxRiH/6p3/KvCbx2jH8MiZLov7KFkKAEQZdE+sGmOTb
+      EwE6YjMlJEQDnMcBEBGzO+ugtELwsWiGljFETyTqUQKVlgrWu9VhDN7HXEiFr8mlmN4tzFxq
+      0bhQXf6+heHL67X7uF9Oed9oJ7QqpoppdYPRGbRKz9jbWVgRXZYBwDJ+m75LsdbslGOnmIHa
+      GMr7P/nkE7x+/Rrff/99BvAvvvgC4zji5cuXkDLmJfr000+zsoL3W8oGfA/+rgcAmF1Vv/vu
+      O3z++efZL4iMYfQ9hJBdralFPl/CJqNIuZFKSszOsyL/lYK4lCToJHIvEkUoAVIJCbtR6ilj
+      vhA3thTtrXOZAvFNLDVBlzQuj6EYUQ7yuTRUjf8t7+fvcN7BOrcoW1XrR4mIlamKjkRcMzqC
+      REmtc3ld+btL2ax2CEnwLw9JORdgdrB8+vQpnj9/DiCyQ3/5y1/QdR1+8YtfwHqP+/t7/H//
+      +3/j//1f/wt93y8oAvXJEUm2Oq925O/QQgj49NNP8c0338A5h+fPn+e0eKQBaZpmERhBQGOc
+      TXz2moSFMPP/tJiUhh1Yuy1THICWCg4UjyyhpMJgJvhQr1wCJEzfdBGQ/EzFAiLbRZmx+TN8
+      vI8h9VkWqTithRDyYdvClvz9a0wa08VLIWC9XR1Qeq4pWCMl5UIGAuIh4AeNj8c6C80oBl//
+      Up4o53eeRmilFnOke7nnQNu2+OUvfwkgHhDvHG6ur/Av/8+/xIPR95BS4MWXL+LhT4mdCeh5
+      3Mp7OQAAME4TPvvsMyilcHt7i6+++ipv9JdffpkHqrXOcQd5kVGPw00serY3bAk79LfTLUYb
+      WbFG6egBCjEX0tsA3ECyQDpsJbWguIWOuW3XWo0dqcUWlDwsjYMDHm/82Rq7AaxrIQBzwHt2
+      ZmRASWwkVzlSf1vr7GlD2DvK50LY9kptdQMp64eYrx1Zg/k1Zx32uz2ub24ypfvP//xPfPnl
+      l9jtdjDG4M9//jO6rsPPfvazOb3PMAyBeLG/V/Pe45vvv0OnGxhvoVUDrVXMMYOlnz3db4yB
+      8z7HBQB1NZuSMnp2PoBhqTnvYvo9Y2KQj7NzniAfINRagGoS0BNrME4TfHEoCUApb+YWsGwJ
+      ZxxbXnqmxi4RsG4JwWUgPSEaclDMDohaYzgP1ffwVh6yEsBrjR9QIUS2Bf3YVls/Go+UEijm
+      +cf/+A9cX18jAPjyxQt8++03sJOBJPvTjx7B39A4aTXWRm/REVlLA0S2ZNf1i4qVImkhcqAM
+      64/1ngl0DQvy5r3PassZ8JZ8KjFbGUtKBeOij5JPfKXfYMec92jUPMYSUMs1KYGiHHvp2w+s
+      83wqrfH85gbvbm9zdrvy8JXUjNSIpFY8DTFLm9jtoLXOQiT33anx53wutTUnLRF3N6E+OFWv
+      tZJt2mIl+Rpba2G8zTEeu26H3/7Lv4BU2t47/OxnXyz6eG8H4MnNE7x99xatbmIq7BAWYYl0
+      ECi1XuTvZeRB/YbOFwJ901aBZ2scvIWQ1KaEQbSCmQyatoHjGy6AhvH4AVimWJx7XMgvhH0v
+      yQFbLM3WeOlvQAwDPOwPGMYRbdNgcGstVa2fyVl4MY89Iqe4nrrRcybwQhsWQsDLV6+x3+/Q
+      JOVF13W4u7+H1hrDMOA5s9iSurTmvFfaGGqNU0TvPZz3MM4gAOh0k2U/7+e06gICvW5hvcNp
+      OOVEZ5R+PdqGAhrd4Ppw9f5kgK5t0bYdvI0BM6HgAylbG0WR0WetdOa5hRDJMJWeqSziJazC
+      ATH/K55tmgbOOghJ7wn5EPCFxgaLUGdRfBJCZ20U/8v7oN/OFCCUWCsfPPa7fRJKU8xy0+B0
+      PsFah93ucrG/5boEIMyHmNTAZGy6vr6OKc3DzFr45OautcLbt+8ghEDfd3h3e4f9bpdcyIG7
+      +3vcXF8DiAFSIqwPgBAxyIizQREBhmouIOvcXBI3/TyYqK7VSiEgYDBj2k8B3ajUj1sURxQi
+      Zjp5ev0EfUre+94OAADsdz3evn0H75ebI2XMCZm9Sp3Dy1evYqIqrRCCTx6ACi/fvMHTpzdw
+      Nqq4wuGAcZpwOp3x9MmTVK1cwYeY/ZnarLWZ2aWASHkapSEgMLnIGw7DgLbvIJLRV0kF7yI7
+      oJhQvNK0sLkuWLYgIOXMi1MJqTLgh8YZ+fEm3aMhpUDbdhjGAcYlioKAU5jfQ0UoShZqK4DG
+      BQ+XEgBTBB45K47jiF0CaqJgx9MRcMDV1RX6vs+uyTc3NzF1+jji6ZObPHei4LSfNTdo3qIi
+      Y3l4Z0SVLy0QmPUOTTJEkgKCDnSZUEHLWPLr6c2TxZq81wPQ6CZ7cvLq8juWqY1UVrd3d7hO
+      CVPv7k7JSmqx3+8wnAcM44irwwHvbm/hvUfbtjieTvDeIYgu1wfm7EhAzBCdK8VDYMfUppOd
+      sgt3zoiWIsVINWecXem6OdtDfC/9Tn1xTGy9hZZrSywXVjWlaw8B3gVMZgI8sy+w0xZCgDV2
+      hf359cW1sPyNEMIwjpkFrbFRd/f3sNbi5vo6AnViUc/nAUJE15UQlnmfSsG+JkM8dL2U24Dk
+      NcxkD1I+AFiVxBVC4OpwwPXV9Wpe7/UAEOmLi9TnKu70t+/7bLz453/6pwiw3kI10S9cpDTd
+      1jtcJ8ztvMfd3R1urq+zpXkzERPmhcpAy/xXGh0toP1uBzNOUFpnzDPZCVrGME0pJKRw8FgX
+      X56sQd92WTVbjiOEsEgxzhsBSynohhDg7boKPJ9b2UoZhLe2aeHhcykrOrCyANryIFjrcDgc
+      cHt3n631kzEQAhjGEc+fPsXd/RGTMXhycw0p5Gbk2kOtZCOlEHBsPFrrnLmvbFLKjORovjXg
+      Bz7AASC3YiKPnB8/D8NiE4yzQACkisaYyLJ4tFpnDNhojefPnuX+y3DGi1oD7zBMI1QioSSI
+      ++ChGz27SyDyqJMzEE6g1TppsJKhKAA+uKhRQlhQGXqXcRZ3d3domxa3t3d4/vwZlJQwxkJK
+      gfMwom1jcYnz6Yzdrsd5GHB9dbUCZD6HmopyS6uUWYvF/0tDIrBd/umw32McRlxfX6FpNA77
+      PZz3OJ1O+OSjjzBOU8zufNgvnq8pAkrtDp+HTRSXrjs/H9Y8F+/hRT2zHgIyBW2aBldpDWvt
+      vR4AIBpfdrvdotJ4VI8a6MICSHxcueGCpQ3gC+uDz9bSxzQBJMzCspIl7VQAoBoNS1qhDBTA
+      lAR5LRVaFUP1Yi4bByDkzbIs+7X1DtY6BB8x5+l0WvgstW0D5xy+/+EHtE2DyUwYxwk3qS7D
+      QxqTS63GVnDhvrynxL70ve879H2kXk1yZVBKoXv6NArpagexXx84orKlga/E3sZZaKlgrF3s
+      oRCzEXCmTNtUhcbcdd0iK11pbwI+0AG4vb3NA6UF0WzCPsz6et6EqPua0F++cJx94O/iLEZ8
+      52yy33c9rLOL8qlN22AaJ7R9l7VAUR5Q6FKQSAjR49Sl630qwD1ZmzbfAgg4XB2AELA/xEg4
+      KSXa5MR3PJ/gfSwWoZOFtmFOdjUgLudXrgn/PbNSBHRhG9Br76Drq/WMHWS3cS5vAYRk6oVE
+      Vvx4YnP7tlvcK4VYUFTeyj2lce52u1ymySdfIessbq5vPuwBEEKkPPxTFbNZ5zDaCZ1uqxvp
+      Q4DCcvNJP0yZ3VbamWKD+aHhatX0pqwrzu/TCufjCUoptAkDWm/hRodGKejkVtE3EqOdMJgR
+      u7ZH1zQYrUkeoy2Ejn44CJG6AEkrJSWur66TlRpRwyQC9rvdYrxl2/qdXyfg4Mao6Fy41Ahp
+      sU5qzN/BsWff9zidTkkhoPLh58hJsOcDsJKJavmNMluMtZEx97uBDPjY7+7ucoCVMSZmk0he
+      rtM05VgI6+z7PwCxrQOXaWJKKXSg5EgzqwOk1IUFEAsRvT25SrG2SJyvLQ8e/xyNN1H9ma9L
+      id1hDzuaLDAT++AT5REyxSUICQ+P8zSgUQ163eYD2rcdFCKJ10qj48a1EKAYlqNDmL1cK1qS
+      H0MZ+ByNtRBqBlbvPSC3w0wJo3OfKyklWjGPdyuXJykf6LNJ1tpd0+WAqVJuA2ZtYCmMU+kl
+      YwwmY+C8Q6ubxWGnuHOqYO+TfUGm34wxOA/nGAeyWr330MZpnS+eC2hSiliXlu1H37TZskhW
+      ZL5o1EeNzNZySpasBblk+zBbpXmfwQcIKZYuF5QIzNtc4ony2SipMNoJxtmsqzYU+K8UGjWr
+      OWtqQNI2letUW7PyGp/71jX6XQmZPVlrWqncF3uG1mrrnVtUBECuAhkQFr771E6nGDvy9t3t
+      whWD5A0pJYZhiKGkUkIVyhR6H99fksVIpe2cQ9u0CO5/KCj+xzYRYgJUl0iolDK7QwPImeXy
+      /UlTsdBiELAyv3QgbgB5A3ISKoSI5U9DQJME8fP5nNWy82avyS4QgcGm1ByU+q8J4qIAACAA
+      SURBVJHUc947SCFm4wtho4R1aMOBVA7KO5ynEa1uMm+7BaRbKs4txzm6XmJh/ptWUa0MgRzY
+      wp+t9cV5bPLYpQNdOzzlb0R5G6UXc+ayRQgB4zTidPY4D2dopXA6nyCkhJlMBv79fpcNgyFE
+      g+fbt+/w0UfPs/GTs31KqsRaRyTVhoBWx2yFH0QGuL6+xu3tLZq0kEIIHI9HHA6HOWmWddna
+      Ciwxdt6MCjsQQsiVDHkzzs76dbEU7qhF7LYOzAdSYIZAiimO9/jg4UPkXVulM5AHRL5618z5
+      axrVwLJAkklES2aLtXBXsi8loBAwXdKv83vL/pSU2SBZYwe3FAj0WYiUGJlh3Zp8VWPDKKiH
+      54/lbdf3mIzBYb+DVDFFPTkxOu9ybedpmtD6FvtdD+8Drq7mXFN8zeLaR+0iudTwENYPJAPM
+      5JXSbZBqtOu6qAoTc2X6TkfjV0mqOWAMw5C1R+UGRj3y7E/UKI37KVo1KXY5kkoH42fVK99E
+      rTQcaXUKjOqDjzYCEeMMMgUCx7ox3Z8LHhpq05psnK2qcbcAdUm9ltcWh5sOpw/ZbWL1jgSc
+      SJRtiypxl5WHGrGVJD9Ez945sJ7cLmisFPdbpj4BIv9/HgZopdAvvIbjs1S4hZI38yalBPIB
+      EHNU24Mz+Du2lUBHwJU2SwoBISWkVAthhYRl730OjqD8kbVIo9FOCC5iPpnCH4MUaPsOt3e3
+      OOwPGYh544fITFMMJMdac+G8gwegEDA5i65ps96bu9upZNwL0NkaXK5FLeil5KtrlIsETMLs
+      5XVjbcbYtFbDNMaxpkNMQBHBM+Z64toA/l5uy6lRCvpurEUr5Qqga1q5vKYblI1kALqf90mZ
+      LqiAY9lismWNQEgyZTH/MDIAm/hismHOu9N4n/PCOGMzBtRKQSXPRVLJUePpMmhBJmuSn34y
+      nYeQkvdGL0LdtTieT4tqIjTGxcYKQMhoh7i/u8duv0fXNFFYp7koiTYB/WgnNGHJ75Ic472H
+      h4dWGqOZFgJvjafnjbM+fHzGGkzOwgWXVcj5PkSe1wePyRpoEfn+FRuUph9CSM5yyxhiYE6C
+      VsPQNfnh0rVhGKL3LStCUlJ3vh/TNKFPhVpKVsemNDf8XZxCZC1gsvu0OtpfPsgBcN6vgD+E
+      6AtkrcXxeIRHNELRJHZ6txBst4S/kof1IQAhGq9sigbr2x4CwGgmxv4sncnKzRNCYhonIARc
+      31zjfDovjDO00OSfIoDECqnMfmXXDiExOZM1RwFAp5f+P9RKgK9pWPI8Mdc7WNwXAIj43kbp
+      HF+hZDS4uRAzWzRaQ/pZcJ/slCkV9UdUl6e7r42Ny2PlePl6lUJwDftzOYyUFmQroj6llJim
+      aRFlVpMH6PcQYgTchzkAzmWzNw+DJFXXbrfDYGbPTISovqo5mFErha6o7vLwlG8n8X0hIG+4
+      9Q7OWjRtAyBqc3hbkGgBdH2X9f7kQiGFXASXAAlLNl0U9ELIVCILkEkVCBH16847OC9XeYH4
+      xnEA4YAnpcRgpnS4F5rjTWOThc1yihAC3qXi2RALS7riHqnMjkKGJEpZXrJofP1qh5ayTFAK
+      HEqCy+dZ65OowOFwgBrHrG0DknzACnNvaaacd5iMzUXTP4gdICRSnDFg2thMrhKbQoMuMUXs
+      o6J2Q8QMxhqM1qQ4Xpl4cfIEjYfpNEYjSeThfQ67rPGm9JtlOY36roc1Jgq1SqHTbSzsEDIf
+      sTAA8f6cnwP+6e9ozSr+eXJmkYGifIaaFCKrhidrV+PmcyI2gDsdUjUeem8tFTx/J+XpL7F3
+      uR98znxMdPCAKEuYBAf82S35wDmH8/kMlVgxej+lUudjqo0h73XanQ9CAcZpghQy+3xwzMa1
+      C0IIqATApK+uZUygvKEkxEolsyU1YNascNYIiPaIFPQUDVzFOEsSmoEoXowYNwCN1Cue2CWh
+      kr+XWDilojfrjFnj+7yPznxt0ozJ5JZRw2ZkJZVSohMip4MhfrpG9ku5hs+NAzGPyivvz7JY
+      UmGXlLdcv9rYy/WVaY9L7L1FWQjgjTHo+z67ZnPqsfVdCQmp28yafZADwHnDyNqURe2WJJ6b
+      usuN8yHAuFnQ1VJFgwdTQZKxptUNYJFlAW8tdNvmtIQheXLWsFYpX/gQhVghY7B8cEusTuwb
+      D84YhxFSSfhxolMUD05isYQQCNJn7Up8j4WzydKMiO3pUPH1zMBUxNGu1svP2ahrgF/rjxop
+      FugfUQFi58o93qLYl+Q3fs+WXLHYB++x3+9xf3+/eld5Lz+QhCje+wEIIUY7Qc18ZjQo+Sgg
+      pphXatz/hO5Z8rQCXfK3oZwySkp4OwMkFd3omhZd06JNCzAl+wBlhmuVhlvlflsuZMyVExPx
+      dk2L4+kYMVij0CanOGMNvCf6E6mEEClDnZKQW4IhRA6+Lw+7F7Og6wUy9SwxZ77f+6hIaNrM
+      ihln0bftomojX8vS1lAC7V+/+hqff/Ypziyt4es3b3B1OOB4POHTTz7OvDzvvyYH1NoWG8Ub
+      p04uUcxIVbczbNeoH137YHYAIv3RXSDxhGIpzIYQYJzLaS588OiaDsEv5QOAMj9bTCnQOyk+
+      cnM+yh2kZ7fWAkqiU010kprG2YW3INuc9clZBhAwmmjEGc5naNlma7NWGl3bYUh9jsMAOBf1
+      0GxMW6xBbQx90+GUAuVdkqFKLRTvMyAe/OBjRufokGeznLLFCpX98bE+eXKD71++RNM0uLu7
+      BwTQJr6777vs4l2jmFutXAPu/1O7jx96lfaf3kt5QynrOMHH6XTGOI3o+z4607ED8UEOwDCN
+      WTOya/uFrjkC77w55DyVhUUzLkL5hJDQycAV6/rObr0kQO7aLqsCOWBpOVtkhRRVvrcEFilk
+      Br7JGhhrcNgfcEz5852d03fTBjRNAwiB4XRGu1uq6fjcSM4pWRdiQ/ZtH+vopqBvKWQOTCkB
+      hDxkafzGmRTF5mG9g/RRwyPZWMr3LmQzANdX13j65En24qTaBjVgLynJYylAeYBq13n/NG/v
+      Y+IE51x2q6F2PB1TJaJYnPvuLlqL9/vd+z8APmEikVgXML5OCJHz99PkSHhsVErWKkQ0+KTc
+      QghuocMnII3FlmPfk7WL/EG0uTyTACWBpT6oLdmtGAROKVJyolgfQych4oGmg6eSvj9mwQho
+      u7qVko+JMteVPCuNQwkJB5cPeAO9OKA1QVcIgT6pZY2Na0cap307GxK5A1l5+H/44Qd47/H8
+      2TPc3d8np7R9jAswFh89f4b74zGHp27x/I+hNFvYv5bhomT7pJS4urrK6tVInXrcXF9H1+tU
+      7y3GmH8AFojHdkauZynpSykApo4PIUAkjEaTbpTKsoFKQuhkTXZVJpkiY+DCt4bI5PF4zH4o
+      Ukp4nkMGAmacIJVMeYJktClAQIYY2NK3HbTscDZjlj/i+Gag7GQ7p15kc6p9J0F+K5UJEFk9
+      41PVSgYnNQEye9ey0FKtNIydXT6sszkFS03JkA9CWpW7+3uM44RhHBiLJTBOE968fYurVC/u
+      se2ScPxYylHeT9RgHEe0bZs9RMna33cdIATGafwALBCbMPH+fKKTjdZS8gsCgLdv3sEYg48/
+      +gjOOkxmgm40vI9Cads0OB1POBz2S8YfSNmj18EaLRMGQwg5+dR8QGPqwDAFhIC0mE0MYics
+      ey1ydmqEkLMi85BOAYF920esy1K/17BiCNGXqJdLk37JUzdKwwu/cGWuyRNCiKwGFhBQSq7c
+      nzm1jd9JCyYWCohPP/44UwgpJUYTXVGIKnrv8ctf/GJBdWpuG7Ux8r81+aSkRuX61b6HELKK
+      VCZfpMU9aT0/iDs0AEisyaB1bjYShSUGUFrh7v4ejdYYxwnGRM/M2S9I4P54xOHqkA8PJ+/A
+      UsAilR5f1MVnALuUg0g3DYQU2O9jiKIxBhCxSEQMJ5RwYY5BcM5DqIKyJQ/IULyLC/IAMn9P
+      ql/e6LsSElovYyDKTA6ZEtKBTgoHlICS7j1P4zx+5qoshVywjwTQra67Hpe/lddqAL7VSipU
+      u1auJacCIYSFrxG/h+bw/lkgF3lczUzu+RpzReCLc3NzHbM9pDjavu8hhcDpfMZhv0cQyDr8
+      vokq0Vq+GOrTe49hHLFnNY4jwBSLLID+EIFetzrKKwCaLjmbCQGtYtzvjnl38hz7IaS6x0JA
+      CLmgbHSdb1wUzNchgg8JmHxuFJXGXcDj+npoybAoYo5NihHOrFL+DwDqLhi1sfF5XALarX7K
+      xudE37lwXq4Lv4f/Ri4bZTXOD0IBrLU5GxsfJGVhqwpAItbzoryc+7bPXokc0JyIJu6c+Y0t
+      WCkcEnk31mTde6ualUs0bzx/Dq80s2Pp2UvsRuGbPvvqzNmus3Ankv4fYqHP5mPfCvanv3zj
+      t6rdzI+KfJitczDOUeRx1ipxVqmG3fl7a5qZLYG8BH56vqbH35ovf/YSNeHCM19Lfu97PQAh
+      hFzxu/w9TubyJFvdrApp0z3lxCzlo0RdrUlYhRueKNEqzxgthMhJeEvnvbOJSbV4Go8Sw/H3
+      R4FeZD6I7o3WZ4O+YNlq/dVYJ95/fifro2e+PkLMlvGA6FJhnEnFKVIm7gpnsiWQlshli6Us
+      50TteDwmttFd3PvyuUutNlYfwoICUL/v9QAMw7CZ5Ml6t6gDUGIZYK4izxedX4/8c0xOBQCt
+      aCA3Ki9y5ztgXtwmlREyzkIl14oSmznvMFmbLchbmz7Pc3293GzyZxIVIxBvWxixZFPKg8ID
+      cwJmrOiTOlkkOwrYcvFcpY8BvofuK/cLaRzkWlED+JLlKSPmavfzzxk2UlmkEnm+1wNATm4l
+      yRZC5IzJi40DsRGp/m8IEBXhKp9mpSGSDUCkGr4lieSLWtsQACnXzXaaFYEYpun82tem9swW
+      36tk1EVn92jWpsmk1CBRZcvZDEIizvusHubvztFmIqVAwVoYJWdBF9aWV87aREq6PEDlem2x
+      SFwbVpMTgCjPnc/nXLaVA3ttLWsF0kt4qskeIYRFxGCWuVa9/Z1aCGFRnrNsSkp4t+SNIaK2
+      iByLS+NNHXjjZk5mWqn8qC3SfTzAR/JG1zP2TA5x5bMcSGPfkSnhrEmUOSK/fTbRTuCDh0zu
+      qa/fvokJtVKOG2sjpdFaY5xGdG0HpSROpxOapoF1Dj/77LPVOMjYx4HTGjODs49xALZIT8KB
+      yFfWhbsUb62bdS7n4S+pbaamrEZZra8sS1Fir0rMd+2ZmvwQsN6b93YAvPcYpymG2qUAdzIY
+      RY9Om7ESDRgBcIKMX3rFm9PJpv65GZ1XKuQLUSODW1i8hrX5b1zYpmuTNVBSYrQmH1StFCab
+      NBnxgczOCSGwa7ocH2GEzZt82Eej0stXL/H0yROchyHn5yTt1ZObJ5jMhGGYXYLLteHrJYTA
+      vt9BqjhGYvNc8ItgGP4MQAbMuXo8L5i9Jei2bYtpmnKWNlI70x7s93tM05QTI9QaF2TLtuLz
+      KwFA1JRS8Ekdytm693YApJQxncX5tGI/yKOTHOQmqhQ/y4vZfQIABjOib5ZZAYyzCA7Ytd0y
+      RV+xKVusySUhj5NlDkgxBsEmy/RcFmgRbbVQyYo8H55ShIJS/DRG3T08nj57kov/ffT8Ofq+
+      X/i38NbaJsc/SyFXbFEpL9E/AvjBTNBSIsgLGBVzOVgt9cp/q3yG1rVpmrx2JbYnF2bO4pXP
+      8+8lm7NFeaqcAUvCxQ/ce4sIE2IO2iCAHW1KzxECy1UjQLF9Usj5GsNO2fUhTXKyZoHB6D7+
+      l4+D/m5hHX4vJ9280SKTkWh20IuYvW8ili5rCufnWT90fdd26Jtu4SEbQlhUVKdGBjMgbujh
+      sM95VUc7VSkZ/41yegoRi4Q0zPBW+6ulwr6NNR1Ow3kR51DaCAjL8vfXrML7/R5KKdzf3y9+
+      L/eg/L7F61/KkxRCdJmOnqx32ZnvvatB+aA5JciDFxx7aEgXjUfWLVOlW+9gR4dd2811uyrv
+      KQW08nP53BYPGsJsKJqF61jKyHkPYw26po0pEJNLdqubrHERQSDAAzIdllDP9RNTt9SLbtP3
+      EKIFXDIAlUJi13YxPjjFXPe6y4FHNe2bkgoKayxeE2oz9QDQty24rpTvXwmcHPg5BaK2SwmA
+      y7a1Xw+liq9RIg5jIYQc0C+lfL8xwXGDZ8G0UU3GnCHExFQ61atqyTAkKXelXOTKbHUTDwsC
+      Ot0ssrDVMBD/VxvXpUWljbPOxuRWSWUb0jVKZU6B/JSBgp71SdPCKyOSwYmPgRqXZWrjy4CJ
+      sPqtTzmJuDxV66Ncjy0HPO7anceGOXFWyWJuVWwp7+N/eZBLObYVYkMdqW21GhWXKT7ivQrB
+      QBSKtJQw04SAgLMr1H8ixtfSYE9uhEjOVlGDEmApw4KLgDW4YZVNgbeSVNKm8TjSkkcu27xZ
+      MQLJy8TjQ8BblwNtQvAwPib19c5hDOOcmFX5WM18v0ejmsW7tsg611iU4xdCQG2kNN+1XVIq
+      zM/UDj5/dguzblFEoB6fveUyUY6Tf+66Dre3t7hO1SXLg8XX5t27dxGRUEV5xHT7wzDg6ZMn
+      K1mHv4/307Vt1BSuRvp3bFprXF9fr4IOQ1Z0IleJ8cHjarfLmSOkEPAI6JM/kE5hicE57Hd7
+      DGaMdgIAgFjIDbyR01ctfR5lRgOSAB4ok/Oyn3EcoZsmF8zrd/0qkzOR/fM0RiG/aXE6n2eg
+      T4BCuUa5CzU/CDX++qEWQlhVWCkxMBBVmUqoxUEkQfWSfBRCLEva6mbl01U7xPy52vi991kw
+      rQEuH58QyY1Za5xOcT27KaZMfPrkSZ6XFGphhedjoTF+kMRYzvnofFURzGjjKHwvalCWKVKo
+      eRF9h6RP2CsIuBQ4LgC03S7bHWa9fYB1BggaTqyNP8MUc80I5vbbVgqxeR/rHCuRslaIaKxy
+      zmVjn3EW0sdiFALrqoY0f60UrF/rrh8rs5RsEmcpHjosRDl5P9Y7BErvuPG8ENF3acvKXs6F
+      j3ErqS/57/NUJ3Q/7/fZ06f5+scfLRHFXMRjPS5e4IPkEiE+gDNc17VQ9xI2zOk7AORavQKz
+      K6sr+E/eykXWSsGHpRdmCUTGTqswwgVJFxJSRmc6Hj9Lz/O+hBAZ67dti/1+j/P5nFOum7PF
+      RKVgMfPr5fhCCNnXaAvQa4DE18B7n7VgfF41rH+pCSEWbtjlGP7rT3/Cs6dPY9oWAG/fvcPH
+      z5/D2hiV13VdTldy2O9xOp3xhNUOBtaaGv4u7rbM16hkUekZ51wMIkoxwCX7s4X9CVG1bfv+
+      D0CThFc+QWJ5Wt1mVqa8nieAWKXRhwDnI/OUHdvU2t2VGi1Gq5pVzap5ceYgnVqtsS2AIkpD
+      OTO7roOQEq/fvVnNn/opAcE6CxeiQF/qy2sAnTFkmKuk55DNYu61xgGknOPWPK8OB7x9+w5t
+      12LX99j1Pb7/4SU++eRjHE+nHIZ4d3cPpRROwzkZ7mYnPxp7LcNdOa5a42OlQJfaOpWHhVIn
+      ku8RuV68/7QoSAHMus2ux3wjaSJSyCXrw0i7TVZIhIDAXItLga4kt5RLMr+j2AQtdeL91xZU
+      3krgon4o1NJai3EYFpqY0RgoiPWBTt+Ns3l8PFCndoiNi8Up+raNfjrpnhgbHavRnKcRnW5W
+      B62GTS8dFmttDjH86PlzNFqj67poeDMGT588gRACh/0Obdvim2+/xc8+/yw7uJENY4uS0lim
+      acLxeIzp8XUdLGt7cYlS8kYll0ok8t5TIzprs1+9ZAvAWzwQlM038s9Ncp1A+k1WsCg1UruV
+      OXMusRmgPnmSLixjmMvGN+/29jayM2njow9PtAz3TZddkglrUUwvjZNSf9O7eRgf/055k5SS
+      MN4lhzidr9Hadk0DqeTiOY45a/3y32md7u7u8Pr160xl3717B598lK4Oh/zM4RALVHz0/HnO
+      9fmn//t/L7qd8LkaYzAMQ7bWPma/SuC/SPVEcgwsEMB7pwAy6fVjdoKl7hcoMAQEQvKUVFKl
+      wPfkRyMkdm2/SJVdtsewL8C6MDQ9k+v8Yh3XyheS+jDG5IDww+EQcw05n0MNfQi4O94v+0mW
+      bx8CRqQC4t7njAZb88mVasSsEXMQMJPJXpjEDpGhMFZzdNnDU6V1rK0RZVzj8+Xj8d7j66+/
+      zmlIfv7zn+P6+joXqPj6669xOp3whz/8AR9//DGePXuGv/71rzifz9jtdnjx4gUA4LvvvsOb
+      N28ghMgFrbf2iwvGNUpS2/88dhbjzNt7twQfT0cELDU7efBsfELE6CRjY1UVlwRKAbHAZlsT
+      LwUh/luZ+qPm805Ftx/yK6K/BAjk13I8HmPyXO+g1S7OIVmCuWsxNQmR42/Haay6P4QQy/xM
+      1gBKQCbn/S453RELKaGyTxAhDuMsvAS0agA1l21Ssi6ATyyAf7VPiCzF3d0dfvOb32AYBnzz
+      zTe4vr7G3d0dnj9/jp///Od4+/Ytfvvb38J7j5cvX0JrjV//+tf461//mmtFH49H/Pa3v8Xd
+      3R3evn1b3cOtZFnlIQDq9gwuB5QC/ns/AMMwpqRNOlMAIUSuVgiQXSBNXvqFIxwJzEpsG79q
+      761hjFJgWozTTGhTVZGaRqFcSCljHMLrN2/Qd12MQVWxQrzzc7Is3kc5vizEV67RYddSQeho
+      FiQbCRAz6Gmp8lrFDBcx9rptmmr2ayGwArIaJd5aU6J2quJ8R+pgivQ6nU44n88YxxHDMGS1
+      8UcffbQA2rJqJL2Lu1rU5JYtCk+IhLJHZ7fqNNf3egAIKIBUrij5xQghUjaIte5ZSgnh+W9h
+      5Yd+SXOwxUaUB4ILzNyxjb+D98HHR43cH6ZpeUDIZYLkHupbipkaKBVjnl2ykUzW5MoxpRxD
+      axiAlGFPLKtUFvMFYsIuai1mo1MZcF62ruvw+vXr/O7z+bwoRneJR+e/kar4008/zc999dVX
+      K0pD3qNcc1T2XTucfI34vUSV19VAY3uvB4AXQQCQN39LExGrKs6bGgvQ2eyWy7FXTbOyeFeF
+      HaJWygpUjGMLC9beI8RcypX6USJ6XI5m3uSu6bJGi7cQohVbpwouLctaxw9s5Oc9OCNlkjcs
+      nwcgFtUytzB7yf6Va3M4HCCEwL//+78jhICbm5to5yhiu2trdX19jd///vf4/PPP8fHHH+OP
+      f/wj3rx5gxACPvvsM3z00Uf4/e9/j3fv3iGEWCix73vc3d1lgK31T/vN47NrB5LGfzwe86Hl
+      8/PBQwzDEHhZmb9nCyHgeDzmIIkApASyARBRR0+GGEp9yKur8CYAtLqFsxZ936/yWvJnalqm
+      2tjo2nkaIQRWheyoTdO0mf2MHzIpY3FsnmmiTx6j5QGkXEBAZAPKFOYAFsl/6cA5H2uCkds1
+      Lz+6a7tMQUrsx+WgGt9clhsq5SYhYgYLx4JMSNXI2b1SxioFWfpMKkpimcZpiiWbKrx/uV9b
+      CBSY1Z+1No7v2RdIiKguCyFlXQvRZZgAJJJ9nZK4Rq2Fkgq+UiUlIIZICqalLLFlDfA5Vl1i
+      zLkpKTetwNRvbdG99zhNqYxn0y2EfeprNFN2QaD5AXM6xYtsXfFbk/JbkvwwJUt3pmCohw1y
+      oKytGQEisSdb63mpXWJLa43ggd41DgN0oj6X9qv2mc+VDmntIN0f7z9MZrjD4ZDJnk4VyynA
+      xXkHqXTOodPpBqfJrU94oFoC9Xz+AHLhi5rAVC4m/15mZcuCd6WG15TiAKhfcsuOVMznYhxI
+      FGWZ/OtyAAcHPMsCYABiHyMWPk9zQQ1gdi1x3kOKlESXHbBLAi6tAS85aq3F69evIaXEk5Qd
+      uoZM+NoTVQC2NTOZFalkn2jbFuM44v7+Hs+ePVsYN/n+PcTiUf+cClhnYwr7rvswNcKklDnY
+      G8BSLZjgTiefeklenen3JdYCyE4ALHlzIIZWjqwOWblJdG/5r2whBIwJQ5WOcby+VjkGmTJT
+      8Dz+jYqlU2OZzm3Szj9HwVenlC2UmjCGJQa/YagTKbim8Irl61ACUJnWHYgsxH/8x39koH/1
+      6hWAqL8n4Xh+J+AxP//DDz/ghx9+WK1/ucZlgTz6R64lfM1LY90i/SNbMz4fogLUyIN1v/sA
+      6dGp8UVwnqdLIYzLsEGqcct/i6kQI/4fzbSox0uLo6ScNSbF4pMKsW+7FVZZDxY5a10N65Ss
+      C2mRIvszP2cYtXis/33+LYRc6zgG5XhM9py9X0nTlNeUqtX7bZUhbyXFoUbyzvPnz/M9wzDg
+      u+++gxACb9++xa9+9Su8fv0ar1+/RggBX3zxRXSL+OYbANF6/Ktf/Qrn8xlfffUVAODFixfY
+      7XZ49epVPkg///nPc7Y/YpNrEWOLdacQ2korZY8a9figFWKAmX8lbU/MNhDLDGmWY7NVsaxp
+      mfYvbv4as4cEMDRhKSW++vrrSMJTiVStFc7jgGEc0bcdjscj+uTk5VMGBClErqvrnIPxDqI4
+      TOVC3x/vIYTANE64vrrCMA64u7vPnpH07CXhjjfrLEZjIGV0z5DJGMjVq0jPqRTt5ILHeRrz
+      oeH9lweWj6Mc0263Q9M0+Ld/+zd88skn+Oyzz9D3PT777DM0TYOPP/4Y3ns8ffoUn376KYwx
+      +MMf/oDf/e53+OKLLwAAn3zyCUII+NOf/oTf/OY3CCHgj3/8I37zm9/g22+/xb/+679Gj1aW
+      HY64hOPxuNAIlQe1lG1qvwORylAFGa4M+CAsEBD1vdSEEAu1JhDdm6n8LvGTlBoRqFtja5uZ
+      SaX30E2Dl69e4fb+Ds5afPvtdxiHCaf7I+7u7mKWh8ng1evXGE3UVFEY5MxdY4Vxyk05nc6Y
+      plgYw1qH23d3UFLhfDovxr7FltHY6TefZCXCYiQPCCFwvD/CO4dG6xhx1u1ywDvVX4MQ2WWk
+      XKMtgZ5f/+d//mf89re/hRACf/zjHxfXCGhfvXqFV69e4d27d4sEaHQPMr5FrQAAIABJREFU
+      /bu/v8+IBgA+//xz/OUvf8FXX32Vo/T4euz3e1hrMU2pqHkx7jwOv1Q21OZRskLAB6wRxj3+
+      hIgBFrFqx2woApZRS5nkgWGqEJFf7UCUvz19+gQ3T24idZAK+tNPYn2BronvZ4Ewp2lILtoN
+      lIwL7FiC2xIL0V8pJZ4/e4YgYhpz6yyeffQUAmIVpVX6v5feq6QUmHMmFRqZkIx4zuPlD6+g
+      tcbLycQcTOOEw2GP0/k8H4QQ8Ozp08xWbGlTeCPgu76+xvPnz/Hy5UsAs3sxAdXr16/xu9/9
+      Lle4JKpLVl8SRPu+R9d1uTDJzc1NDol8/fo1vvzyy9UYyFlOiFlapIOc2RmwA4GwYv04J+C8
+      h7MxfuG92gF4CyHg7u4u+9JfOrncDE6pPxY8t7Ho2i67HjRaZ+CgRjw/aVIo6EUJmSq+i5yH
+      J4SYL19KiU7PVlPivRUElNZZBVmO92zG6LSnVH4fr1XAedDM77KaANZaBIG5oJ9zWZYZWI00
+      IQSOd0f0XYfzMETWLWIDNI2GMfHd1sbU8uM0xRpflTTh5UGm6CxrLf7617/mDHQvXrzIdpf/
+      83/+D0II+PWvf42vvvoKx+MRNzc3cM7hxYsXsNbiv/7rv+Ccw69//WsMw4CvvvoKIQRcXV3h
+      iy++wJ///OdcbvUXv/hFdgIsqRKNp1zDEnZCCMn9xGcPXOIAgHiYrLW5svwHOwA02Nvb28Uh
+      qGHwcjGMtTC+CKtMfDqkWPC95QE6TUMkh1KuAm8ISPm7+fdIggOssbDwqxSNIcSYhoCI/QOS
+      1kisi3WU6xBjbNuZzQmR2vTNrAnxwcPwIiLF2kStUpw/sUzG2exSwd9XG8MCYTBDGK1hjV2j
+      eVN0lk5u3TUHwxJQqV8upG4FuAypNCtn2WoHJa5TVKYAWNRa4PuoVCys8sFYIBrQ1dUV7u/v
+      F7Vrt+6liRCmpxxCIYSUdjySPosYzkj+9nzBWtXApzxDRFDJ+EbvKd/JBTMAcMJhp+c6vfMD
+      UU4gQx7FLDjvMVqDjqlDAWSgDoi+OpMzoHxBrdaYnMVgxsieCZnTEyqp0CSHQkqpKBLwx7xC
+      85y5CnaLypbzrrUS8Ja5T+OB+ebb7/Dll1/g2+++w2EfK/Wcjid8+ukn+P6HH9A2LZ4/fxZr
+      dGHWmJHbyRZAczVpOc7S1iCEgCr2soYs6LB90AMAROn8+voab9++rQqCQGRfOtkuJhQd6Qq9
+      cpq8cw6DmCAhVsHdxEq0SmM0MT1Lq2dqEULMmGxdTLrFDwHvp+TVYwdRPiDgj0UvgLMZY3pu
+      tUwpKKSENTZnhZCQcEgbo2LYp/WpCiajavS+wYyk/IkYNMTU8LEecYCx9VJLvI+SypaHmiMA
+      /lsJiFprfPrpJzifz7i5vsZut0s+Tc38W9/DGJMT5gJIkk1sVA9aq+3M3PT5q2++wbOnT3M6
+      Fecc2rTXwzBgt+uTfOIxmQld22bDnhAix2588AMApM0Qsyov+tDPQyPHsHwvkPxg/GqBmiYK
+      tOfhDDR6sbG8EaCXlVCIvdpKU8Kf5+OZ+wBEoCzGMXyThPc1MIWUZTlSDq0UNFRmCVvdQDjy
+      8hSJkkRXii6VggIoOk5lAXE0E7pkOyHHwdohrs2hNtctNoa+CxGLDnL/qBCilfzJ7qaqdaLG
+      fZV4JdAau8THv+t7vHnzFvv9DuM4ZgpAnMT3P7zEbreDMQbPnj3N7tDlWH4SBwAAIKK+u2tj
+      EDX5oUTgWZYkApI7dRk3jBh7GxB91cdhhJUKimU15o07ps0bE7M0lNi2JnDl8RFZTZh8SsIy
+      2SzoejzYjCdFZFHI65VcpHmj0qnGRe2OSgBzGs9s7aI7dJvSNFJiAe8DILcza/A5zF1tR1eV
+      7OSl/kJY5iZ66N4sx8hlrWI+Ls4mPX36FDfXHlJFa/jpfEbXtui6WLH+888/w/l8xtOnT6Ck
+      xGCmmMAsWeCp2PdP4gAIIfD86TNMZsI0TlWyWzpvkZHKF9oe0hRbZ9F0kfxepazK5SZKzBmc
+      s4zQLN1wa16QNObyPmPtrKdO+lmRIrMapTEk20KJhUhw88GjTVnjRhM1XUrK7BErhchyz2I8
+      YVYbU8+UtItSy/A2pcMUQiyStwVs5R6VvHSNglwSUGuN38ufp8+1d9NaSJ3U40LkWsCeBFxn
+      0HTtnBs1ePgA6BDjyikZ10/iAFBrmxbBr/1tgGV+emqN1vDGLyq1AGnBEBej7TocTydcH+IC
+      8cPFsc6WgFhiRyDVHyMdflpw611Wp/L+o89O3Kgm8fWaywFI7E/y2YnyTWSfnHcA23xScZbj
+      i2uyRhqc/8+alhBycDi9rwRC3moAfAm4OaA+dABqh4zPq/xcCse1fbOJ+gZElsozSkzXgaj0
+      OI3DT+sAUDudTlH7oZp8gknFt8DgQqJve4xmzCkNgVnAVAk76rbB6XzCrt89SL6p8fesNBPB
+      59TuUkg0BdYKIUSbArCo+VUr79Ok1CU8VxGxDy74RdG6TfYE0VDnEVIWipi9uQY4Uggcut2m
+      cAksE+LWAtAX67yxljXMTirP0ienHMdj96f8nsecwj/pgHvyok2UcjBjioX+gJbgrda2bTRA
+      JWoAzIvy6vXrLNgAUfNwf3/EbtfHcjx95P+sc9j1u6g9kQKQItaiSsaiLUxTsjchRODjumQC
+      TqFSGnRETY0UMc++c7HIRw3YMxYu9N215L5CiFTD1y0MX5QJgo8/JPap0+2icstkTQ6YKQ8+
+      zcc4y6rDR7mEHPZq1LIcYzmOLQSzOISVtSkpxtYh2DqQ9Humoky2a5QCQizEoRJsRUPpT/AA
+      AIzfl6HATNFF9nQ6xXJBXYeua6PlNAB3d7HQgpIS4zCiaTTu7+5x9eQag5kglIzZyrp+le2B
+      NoCsvbGFLKiWPO+80CKxFQYtmoUKj+4F1kY+vpGl0EfvoVKvHZNLztOQbA0yuWaIfEgBLIRs
+      KrpdA/yAGI0n06EK8w2xYqePznRAdPl+CCc/BmuXrZbtoSZblEiK71d5YEIIOZhplhfk0m09
+      xP+U1B/WErzVvPe4vb1dkeJxHCOQGhOrxbPFO53PUQNgTfxdSozDAElp8Ji+OTifw+2awlB0
+      phDN1AQiZicSDiDHrD606bQJWxgPWB8Q73021V/qU4hUEDvMVTRrNZS3ZBsOaC65DmSZSEhY
+      Y6Ca6O6xdYi25v/Q9dr9JatZyi4hhFWKRfob5y/n4ucJiVH1HkoXQ/mTjI912NSHyA79mCal
+      xNOnT+Gcy7lieKYAqvBBTQiBm+vrlByKkqR6NF3KxiYELA+cVhLGOSgfFgeghq35mOj3rusW
+      VerpGbpnsgY+BOy6vrqp/H01Ptham31iau4B52mMRUSoD8Q0LoTpnPfwSShvVbt6vmwhRFeG
+      WjKu8r5ynfj3cu1I6CalRHkvXwPgcvWXWp4iesdoTQTmlAeJDkVAQAhzlo9McaIqDY3WP80D
+      QC2ElFKkIJVbGgIlJXZNt3AYA6KsoJXCaOfgdCFTkbtpyhsvRGQnyGhVktcaz0ufSX/NKYj3
+      fhHsfknTVM6pxiLxPihmOo/BexgkO4SJ1TiVkPAypo6vHbRMcbwD/OWoLQov5RSo7LPGlvik
+      gcnevZUDzcdTE77LdffBJzVx1Jx1Kamy9Q77xN6SnSiEgE63UWmB6KPFg+1/sgcghJhMiTQp
+      ZCavleYsMSVlmaZ7JmvQNy20VDl7ghBRODbeItgArZuo0kwp0o1bVq4vW7lBhPk5+0RFJP6W
+      VtOiUCMedzQTpBBJ7RfbaGMGZBHE4uD54FFWxKJ1cM7BmNmnKK5xqsrDANph6UtPjWI7uBCc
+      8+9XCmjQ+m2pn2u/8ViBnAodDsZHtxOVMuuZiRVPdDPVEKkGg3ceQYQcF/CTPQBCCEglcT4O
+      ybtxXQGSf+csihICEgKOMHEihyodgOJFEEJm70c6IH3TzgHtmMl5Lf24SbmKyoMZK9asNRY1
+      wOYY/pI2JISk307C6uLe5C4hlcwu1BS7wDVNC6D2Efh3+31OyuUB7Fh50xqWps/DMMzCJgPo
+      8lm+R1s8f9k3PSPE7GpxaW22Wgghs4u8DcNP1A5AbbfbYRhHnIYzXFLzlQtEjS+0EAJCCgjP
+      yXTUDu3bPqYXd7MLtgsuZlueJvRNl7IsiJyuPAC4u7+H1gq7fpdVn0qqZHiJhb9VqhDJk1T5
+      EFNwPxbT0dzK6+V856xyyZgWomEwB9CIWRVIfcXqkQZdM2dDiJ6lOtYlEEuMXDNI1sa1BcTl
+      nGrsVw2Ya4feh+jUVivnyvsmqzkvYl5jq4jN/GAhkY9pSip89Ow52qZZ+XUD6wXgaUO4L4/A
+      kvQqpjEgIA2IpNwaE4t2M/bnfDrhyc0Ndv0O5/MZUikYa3GazlnP3qaItlgqdYnNtxoBzxYm
+      K4FrwWIkqgZBBkJkyhDXbu37FO0VcmFN5kBLn2tp0vm6X5rPlnzGAZEDY+1+/jmquCP11hXf
+      omjrYFkhQB60btUXX8fz+RwLZVyc0U+gCSFwc3WDt7dvobVaLFp5EBauxmzBZYqRBZAzl/H7
+      AOQ0glrr6CrbzeS26zvcH++x3+1zKJ+EwJAyVpe8rJYzIAasheUSE1KrsXb8Pj5fKqbtfcx8
+      5nLysNkwxvsQQmS/H/pe679Gffj95SGISXgpl+o61frWfvFDUbufvlPi3RBizId1KdEwIkUT
+      QGb3uqbNBcoXayXXNdP2+33MQYV/gLbf7fDs5imAuupNCJF5/LyRiffVMsajluScKrIDM+9M
+      2K9tW0zjtOBDed9ABPpd0y2qzlBTUqFLaR55IbqSL+Zz4Fky+LxqVIA+KymBRMGA2aAlklxT
+      tlKTVrIf/Jp7AIPSbz65aEeLcvI1Mgav37zJgisF5Ltk4+Bz4p/LDNp0nd43GgOTUr2TUgQi
+      au4cs2ZLJqddkqWU/AegANQokPt4OsXNYxvovV8JecQOWWcXRfGAeTFKT0i6fjYjGqVwOp+w
+      3+0jgIk1ZSnljrx5QmTnOBKCef6hGpblAiI142z2egWQ86V679E1bVQOJOMX1TJolE+V6n12
+      sa4B/RbrQetDKWlqQMTnqqSCVAq5VFMIuL27w/X1Nb7//vuUXFfi9u4eIcSsG33f5UivcZqw
+      63uczmc8ubnBfr/P86X8sVJK6EbDO4+26dJeAJQUzSUqFPe6WY2xttb02z/MAQDiIfDe4939
+      bbKAhkXUFt+gNpVUIt8YoMYaLflk61yu7Gi8g1ASx9MRfb9b+CXxvkqMfZ6i+jXnKmI5i2ph
+      l9Rq7I9Jqc/JnXpK2LMtjHcU3C+EQKOaFGYYY54V6sBeLQpSCKUrdqdwYqNG7h+REs+Fr5+k
+      wtWNbuC9g5QaV1dXGMcJQjjsd7u4p1SxUeuF/ESRdSFEbRovI+WCj2ujFRqsBe9MoVIflNqS
+      I4BxGv+xDgAQneUO/R7jNGK0BoOZssmbGgdOrrassR584Ua7tDaGECC1wjgM4PHFvD8CdmMp
+      +FzAhpo7t4NiGgzSg0ftxpzunTedssCZpJ6MYZY6x9BSX8ZaSOYv1OkWDznvbLFAJTWrCcGX
+      eHkgVpO8KhLb7vdzhrd9kqP4WMrySJnFY/fM642Ucj7kWge1Qib0HCU549dlCkf9h5ABeGua
+      BpBzrkyf/OZDIBeEuvGqhrEXmBEBrWqy8Yeu+xASllrnzZw3PwJ4qZHgLRtvCj4+hJAz3q0O
+      gFTYtV3GXD37TO8HkDEcB1oSkkuWRxSHp1yHmu6fWimTlHHRNZml1sr3X9oX3iZrMJgR5/Gc
+      7o8GS5nSxJPCgY+DMmJwuQBAzl/0D0cBgOideD9OMYGuc9HTUwggpCzTiDw397EvN6XEgAIC
+      UkeMHJj5nuSEkl1aAE0i/QjxvUPhUAdEkk3xufmdQkAEkXXx1RZmWYWPnViYYRjw6vXrWNAu
+      pIRjAmibZlVnTIhZ/Vhz0FvMj+ZVsDtca8PHw/sgZETZNrYAemtf+FimVPxDpmQDIkr5ePn9
+      Szx5egNjDI4e2O13GId7dF2b3Vu6rsPx/gjdaGit0Sf/LSFi7PDV1dU/HgUAGPAASdOSppHY
+      FAiB8zThNA2YkncoUBc6AWQtUQgxNXrftNi3fSwwkZ7d7XY4nU+rzaamZMwD9O72FsHF/DhN
+      0l2r5IAVMFMpPo4yXUo5Txp7qeWg1nUdzuczXr99A+sc7u7u8ebtu1VfXBNVXiu/L/yMKtia
+      KyBqfVJSgFr/vJUsZZm7U0mVtHRU8wBRAhbA8f4IIQTu7+9hpgnvbt9ll3hrLd69e4e3t+9y
+      DeIoowR8/8MPuU7FT9Id+qHmvcfpdIqWTWswmTlvZF5IISAQMTqPKiMW4pIvCt9c/p1KfPL7
+      Snbp22+/hdYaU3LZVjKm9SPtjRQCu90O52HARx89Xwm0IYTsDcob9U+gRBVZhBDwlAolJeEq
+      wa0mH/E2jmNWMJTvrK0NB1pr7aIyTOnGfcnD8xLbU8oD4zQBAlkjh4CYLDhEoyets24iG5vX
+      xnvIlL6RAmLGcZzdKv4RD0DZaPHOwxnjMC6E09GYzB/PwpXKWFgn9uMhPpSw0939Hfb7w6qG
+      GPV/fzqmzYkBK+RjdDyesN9H4c/Z5IjVNUlzo3NGCDoAsWiej/ytc7mKDr1HCYmvv/4GXSo+
+      J4RYlBniKQAPrN5vrQ3DEA1DrlKIhL2zdnhorbkOv+u6as7+spVAXhPCqVGaduvsbOsAINm6
+      1dg1+k5+U2accqV7IX7C3qAPNWNNzBgWgMkYNFrHmF/ESoZANHD1TZv15yFFeAkhYGzINQcA
+      LHKGUkQUdyYTIubL3PW7zB6Uix5CQN91MdZASngb0O1iDMPVzVUe+5P9IWH0mIArF/5TGgGJ
+      JcuhluTUFr1cqeCeQMxgoZTKtpE+bewwDFnd6H1YaV3+//auZDuOI7veyDlrHgCCaoKg+she
+      yF575x/x2j/hlXc+/g8v/Ck+xxvbu+6W1OrTAkSCAghUFXKewovIFxUZFVkARVKAqHqbAnKK
+      HGJ4w3336UJt0jMAuzP9vnoGqk1B6gatULTKhmFo9KBRtRa1bZNNAbTxAKXL6vdjcu3S+XVT
+      oyoEyzcxzdVN/etdAbI8Q5wkAiDVYoU8z8MwHMhZFBDZWyaXHudb6hGLWdIFarWcnmQPkIpC
+      NOCOwiK3bwZTKQv1jzL0w52gGBWzttoZHIqnJXA9Ga2mOgqMbVnvhAG+bb9q6g7hl2nmViXP
+      cwRhiKoqt9Fxwyy87xomkepLGxFWyalU9VMtCFjXNdI0xWAwEAxvA+HyLssSg3Agn/N97ofU
+      x816jfl8Lt9H0zS/3hUg8AP43m41dfrfdV3ZYauqEgUY2gQVv2VisC3BHxN6Dny4Msmdc5FX
+      SgkV9GHomn3LtCrk19/ydm4lLfIdz45tWShFhmPnmaiCvFwx2npfnuMizlMMvG2SP+ciAt60
+      gTDwLvxCPU63Xxh2k/Pft8OT6C5WIqsaj8fIskwOCNuxwRsBnRCDXtyDWL1yDAYDRFEEy9ne
+      V80buJbTcQo8RJXiLQ+Qem9lXf16BwDwMHTieDwGIAzYNEtR1uLBBSWSeBlZIYJpZBvQqgCg
+      M1vQss4hwvDqMbpwziW9ol7qVWV2uG8g1byRnZryC8imoSh4t2Gh71aFgGv7bDvQKFjXpyZ8
+      CqF2XNeVKwDlU6s2B2MtHgvi3ZGROhwOUdc1kqJE1qq27mC32+pqmvqMjDEkSSJcxdh+L999
+      Itygn0pkKdbWUHQcB/xuIz1GKoc8mFB/GDcvr2TklXUlYcUq/7zJCAPENanwBu33HXc3UYba
+      BSBI5bYdkgaQbdlwW4xOX6I9qVEAE2VU1VkQZmzP+4jJ0NSv1edMILY6x3aMGXXECaurh7Yt
+      VgWiNFddr+pKoCfcqPey2Wwkkpex7STyq4wDmIRK8KiiJ3l7nofpZCoDNIy1kUTWJaYiCkOS
+      ps2yAtDx4ZuMNfKIkAiiKr9tUwDbLANSsyNs199OKhCpP3r7JLSSkWdJlYdwde6TPjdp3wqo
+      q11E46K/N/p12/K4KoGWeqwpQUcdACTEckHncM7x/PnzzjEMYgX6bFaAvmrgai0y+p9q0BJO
+      XPB4tgewbXELKQzIshyBLyqwcM4Btksjrv7qM5AaAabj1A5itR2AgGy+60miXzqOPFJqO7qQ
+      AayvSqZV6j61R3+WvhTJPu+Q/vfA3634aDrHtJpK9bElMtBXQHXCqKUayyRKlgxquj5Bxz+b
+      AWCSshRRYD2o5LqCKtECQ9nUsBrBLkAv1TUA02bTKbIsaztyl06FRD9H7UA7Big4sqKQejzN
+      gI7FUbQUJ57jbstBcb6TXKO7KjlabxITniI1km26rz7Zt980e+v3ow8w2THbgFnfOwKAKC2R
+      5BWOp91qPfRrWdY2KcnaFiSvmwoWE+5i1jCRqgqRMFOWJe7u7sDavmDbIkHKsp8oL9DHEt3q
+      J2GMwfd8NADc1gXsKMtuHMfIskxEcNskjllbXK7PpWjq/H0eCUAgOF3bQZyLInYqopVUl7wq
+      4NlioFmWhbIu5bXUyihVm5PMDPehS9/Mep+o6odp5dOfz+Rp6vPTk+RljX/9j//COirwL//0
+      D/jb382MA562NY3AV4mJo6vuupYrVc0sF2Wrfrq6wrPjY0RRhDAUdQU+6wHQtzw7joP1Zo2o
+      LTFKyRYAJPvAaDSS7HN//vOfMZ1OAYiXXrdpeeqyTOAxvX0SOn5rpApdNfR8ZGUh+Y9UsZkF
+      MEiVxrb8nUGlP59nu+At/LdpOCpe7sAtVK/WQ7w/DzF89Q6qe2X069H5ve3zLnWKSdcHtqms
+      6rXrtugI+RmEFuDCth0ZZU+SFEkS/3oDYR8inAvfM5Hsqi9X/eVcxBGyLMPV1RU4F4UZRuOx
+      mHnrCmUlyHhttuXw1AvK0YcWrNJbtKpM6+PbD8n5FgpRt0kc+sDSdXt9n9oRRXabs1MqSR1E
+      eZ4jCIIHqT4m9cZ0nGlf372rXp8oLRHnFU5mobGNsiwljMG0uupqmLpCUoCt821+iwMAEA8f
+      RZF0larb9ZnRbvlFAQiE4WoFDlEB3WtxL3VdQdBvm2HTVN+AgXU6pX5PjDHpL+9Tt/Z1Pt3o
+      bZpGtkeoVLUyIyDgC1T6dF+Hpjb76Ez6jjepgKZzTa5R+h4k6gBQ7Sne7KpYdG5a5OC1yAxU
+      KS0Z+xVjgT5UGBNkS1SAuW8VIOONPs5kMhG8pU2Dt2/fCj3ScXD87JlI2cNWTaJriKJ32+R4
+      yTfEu3XKBIa+aySqFCUmqetaIjJNagIHB68bVE0FbqBKAUSn8n2/dyY1qTf32Q660a/77k0D
+      pw+qra4QJg9W3doCfktCoA9O33VR8i0svnNvv9UVAGh9/lmGNE2Neuk+L05ZV7AdgffntRgM
+      VV1jOBjg+PgYwHYgVG1yOyDyjsHEb+B6yFsQHGMMaSEKRjvMhtsyszmOg5ubm171RBSBmyNo
+      KzDqx4kEIbajK6vvQP0l0Z9XP2bfjP4QL5OuwujvW78/+T+AOI4wHo07A1OQmUFmCqr3R65T
+      HZAHfOZu0PvE9OLVWZ9mDMdxREJMksiZvaxKpHmG0A8QeD5evHgBy7KQJAnOz8/BOcdiscBo
+      NAIsBjQiEFTUZaeQd5erR0SNuVL+tSxLRFGEo6OjnXvnnGMwGOCqTfCYz+fSc0X7CY6hrw59
+      BqiqOqmdVH9npvcHdHMo+gacvtKo203Hqm3UdQXLtmXOhICIbFlBiIxYrjxcUO3PZrOWwqVs
+      6yaIxJvf9AoAbH3E+zwdg8FAGolJkkh7YLPZdPRpymYiX/ft7S02mw1gMTw7fiYxME1LlyJK
+      I+2uOGVVwWtRk0VR4Pb2FsfHx3Lw6R3Ftm385S9/wenpqax+qHZEky6ttqeKPivfd1xViQ6p
+      G+rqufr9muwIXe2s2hyI0PU7/n5OFChlhdFwKHlZfcdr8z8KCVGhQuJVWQlPX9Og5g1CV6lT
+      /FsfAICAA0eRSKXTZx3OOabT6U6mEw0GlbVYFRoM9PHevHmDoiwlAogD0m/fNzNTR1kulxgO
+      h5ImUL1HxpiEfFxcXCAIAhwfH0u74D5dXdXRTcfuWwE4gB9fv8bRYoE4SREEIg+byK84uKzQ
+      2fd86n2oz1XVFYq6kgVKqPyrYzuwwJAXOUaDoezUdL7rOAJnRapRkgg0aiOIu4gu56ACKeJ5
+      IrGEPpwqdo/uzBjDcDjEYDBAURRyANE+wiYxJmb6L774YieAtM+wJZ2Vji2Kotf7U1UVLMvC
+      y5cvcXV1hbdv3+Lk5ERe6z5Pjb467NPhO3YRIIqAQKyGwBh13SBNU/iBjyIvZPnSPluDRFe3
+      LMsCq1sjXo2ANw14682hFFXeAA2Eu9Mi1a1Ft3ht7WC3EYXDVRwWY+ywAgBbl2hRFMbO4rou
+      xuNxb4elFcS0lPfZGfrf+qxeFIVMHumbpfVBRO7a6+trcM7x7NkzaQCS9M3A+j2atqvXMO3X
+      0Zimwh4mT49JVJtF8CcJGwqAZMNL0xSO6yBvPUAcW15WIkpQQZKmSeezQYN+iDDGMBqNpI9Y
+      NxpVndokejqhqfObDErdy2QyHNVrmgBg6t9U6OLo6Ai2bePbb7+VubR9g9ek3tw3W/ftV9+Z
+      3tn6nt/Uhggy1hK+zbkgOSB3sfT8ZDmqskJT1OCNiAVEcYzoLkIci0KKVV0jSVI0nCNNM1Ec
+      23Hguu7TK5T9mEK6NM2W+ixNXJYm8TxP5iGr1+tz9/W1r4pOQ0j30IfIVNssigLz+RyLxQLf
+      ffcdXr16JSLLGlzc1FklQtbgNdLbVe9Tf2eq5GUh63fd99yk+1NWm9/mdIucii3lZJIkKMtC
+      BCABFKXIf7YsJnBWtQPbdpCmCcIwxHqzQVEUGI2GHbX2oAIpkuc5kiRBHMdI0gzT6US8eC6S
+      ugdh2DsI8jzH3d1dRw3Qabkf4uZTOzvnvPOxTKqTfl11u+u6qOulkFqoAAARP0lEQVQab9++
+      xenp6c7gpr/3DSp9+4fIfQY5IOIjxPYniAkEUYAgDBCU6L7rIcsyNK3RS5lk9K4I2lGUJSyr
+      JR7zPMRR1Kk06XmfeUbY+wpNBLerlWA3iGLcrG6xmM+xXq/BGMPffPWV8VzXdSU3jqrK9LlW
+      9X36MZT9pCbh67Lv2pwLinPPE3WUCUKgulLVQfo+url+//cNKNPq17daiEi4jYY7UvWhXGj9
+      HfhtUXVX89oFbTF039tm7AW+D4sxGfkn1/ZhAGhiWaIca13XsGwL87Zcq+u6Mqe07zzHcTpu
+      UV3vNXUOkyGs/urbSFQVhdrRq64QhENNMicxqVj0DGrb6rX61DjTtn1I0H0rgXwmbA1mCxaY
+      tTuAaDWmajA6jORqnSH0HQx9G3EcIwxDGTyjyeowACA+7g8/nGN5tITXgtBmsxnW6zXms5nw
+      Ktg2wiCQvDeDwWDHuHRdVxaDUEXvaOp+fcUAdgs86LNuXycyzeI0AG5vb0VUGrsDk+6dVp3z
+      83PM53NYliXP8TxvrytWFf3++gJwupPgIdcChFMCNkOUJTL1U82cA4DvLzf4t//8b4xDD//+
+      z/+I0BNZYbqr9TAAIBImwjBEVZb405++wXK5EBihLEN5dS31SoHPESC6i9evcbRc4gsl19T3
+      feR5LjmJ+gaC+repMIa6XT+v73pGF1/LYhEEgdCZW+pC1atFxf4sy8L3338Px3FwdnaGu7s7
+      VFWF169fI4oivHz5EqPRSJ6rYvVN3h3Tc+minls3TWcGp2dxHEFsm6QpOG9QNQI8uBxP5QrQ
+      NI1872Z36y5UgyaqgxEM8VLOL36E6zjIixzjkaBSqesKWZYDTMst5kBeFBgNB1gul52XTaSs
+      0iNTlkjTFPPZbHv6PZ0CEB8wyzJpl/TNkvogMenaBK3+61//iqOjI0wmE5nplpU5PNdHnqao
+      qgrL5XKHrgQA/vCHP+Ds7ExGpE0xCV3UGV43+PXAm8nNC0AYrYwhzVL4vo9BEPbaK+QGJvXo
+      /KcVhoGHUeDI7cREJz10hwHQL+RSjOO4sw2A9CU3TSPK+ii6/Wazkcbmncw5gJjBqkry2YNz
+      TCYTXF1f44vnz+F7XmeGUj0WJH3uUn2/PhgoF/bi4gJ1XeP4+Bh+ELQuSgcX5+f48tWrTgSb
+      Znn13DAMsVgsjOrQfd6ivpVs337btuH7foeU+H2laRq5otHgkN/xZ1/1VyJqRPV9hTEmcfI6
+      1KGqKtlBKaEEgPQyAOLFe66LLMvaFUQkdFdVjTzPJGe9apyq/niVX7PPqDTl2dLHVc8hj9KL
+      Fy8AABcXFyjrCqenL8WKhV2QGgnNni9evMD5+TmCIDDCr+9T1XS2bXUf/VZ1Das1eBsuKsfo
+      OKz3FcuyMBwOUZal/G6E3P3sVwCi0NCZId5XsixDkiSdWc9xHAyHApBFKlIcxzJJhmwB4H6s
+      uz5zk55Neq6pc6neGlM2lFzmNfWIIBNZluGHH35AEAQ4OztDVVUdPJR6z/SMlmXh/PwcZ2dn
+      HYhFX/0w/X5N70O/77qpwZiF0WiIMPj5M78uulftN2EE67xAP1dUODQgXiZh9Yct4pGWV1qy
+      SRUyeV0As46sd5K+2ZJEN5bV7X0QDZXT//e//72kLTSBAdXr0Tms9adTTWX1nnQ80L5VwfRc
+      DeewHQeT0fijfTu1Hd22+exXgI8pNACovhS9ROrw9BHJHqBcAzpXPUe9pi7UwToh+7aTrNsc
+      hLQtK1pWFaIownKxkIkinHPcrlZYzucy+CVgAN1CdFmW9SbD9w1Yut7l5SXOzs7kANBXCxMx
+      gOna5OWh83zf/+gdf5989ivAh4geIWVMRBD1HIA8z9E0jSTiJaHgGbkgTWJSNxhjkr1O13+r
+      ssLx8RHqukacpGiaGr4f4O3VFYaDIXzfQxTHCIMA681GBn7ydgBQG1QxRVeh9HvTM8MoukxB
+      Nh1GbvLmmKAW6n3Yjo3AD3phJp9SDiuAQehDJUki1RuSuq6xWq2MqspsNjO66KqqavHy97ep
+      pjTSQFA7Tt00SOIEg6HgyudclAqq6lq4TT0PHFtSsDiOEfgBirLAZDy+d/Y3eZH01cu2bZRl
+      icvLS3z55ZcyMf++uARtl9VzqhLDwRChH+Cx+uBhAPQI51zyyKgSx3GnM6tG1WKxMLou6Vqk
+      OvW1B2yTW9TZUPejA/2ZZH0uSfV4ctHqBjZ1TlN0WhfPE4A0GgQmVUi9Dz0I6Ps+irLAdDJ9
+      MA7pU8hBBeoRxph09ZHuSx+ZOvn7uFbDMJRR2LqujZAJzrnsWKSeUDu6Tm3yIN3nfSGVpq7r
+      Dj+OGnzTPUp6m7SPMtbUzCwiGtvXPnnPHMeRtc0eUw4JMXuEZqbNZiMT3NVOQEEj6lRZlnVc
+      nyTqhydAlklUd6NuZ1AHfMjsrNsTekdX96l/k51Cbah2i2rck5EeRRFmsxkuLi5wc3PTMV5N
+      qxZt931/h7r+seQwAO4R13UxnU6lR6YoComMJFEDT5vNRnbevqin2jFNx9AA0wm26Fz9vL52
+      6DhdNdGTY25ubyUdI6lfaZZ1ePqTNJX3TdscRzBqv3r1Cuv12gir1o1/av8xDF6THFSgB4ht
+      25hMJri9vTXquUDX174FzpnnF+oAaidU1RAAEmahFpDT3Yv7Znj1uiaqx7IsZa6AbdlI0wxX
+      19cIggBJIrLbNs4dfN9r1TURB1ivN1gu5hIJS/dF3qB9gTurTWZ/CjM/yWEFeA8ZDoc7urNp
+      Fif1oM/16TiOzEFW1QrVXUhBJ1NCtx5AUyup6F4Y3fgkoXMdx0FVV2AWg+O4MgI7n88wHA5Q
+      FKXMhgOAUfsOCE9DbZ+cnGC1Wu24jdXA2EPUt19aDivAA4U8F57nwXUF0zCpQpRcoQ4EFTFp
+      +uC2bUsYhe5WBcQgIR77NE07g0UVtU0TZsjkLdL3LRcLNE1jLKhN2+i8qqqQpinG47EcnASz
+      Xq/XODk5MUah1Xf4lOSwAryn0EckkJZaeVDXy6MoQhzHvTo6XU83HqmzEYNBGIYSd6MPNLoG
+      5wKFqoPx9GOzLENRFB0cD11DF5NLk3R49bqULPPs2TO8e/euo9/rq5WemP/YchgAP1Mcx8F4
+      PMZgMMBkMulQdl+/u0FRCJcgeYb2RYJHoxHm8zmGw6GMjqrEWHQc/eqzOCDUrslkIpJHkkR2
+      cs65jC2kaYogCGQBkCRJdhiTTW2QFEUhqdvV5yHbJAxDrNdrWJYFr83XBUTwjqoylmUp+X2e
+      ghwCYR9JmqZBFEVI0xRvLi8xnU5xdX2N6WSCIAgQRTH+/u++vvcaV1dXANDpZKr6YcLJ0Gyu
+      Ro3VgUHJNVRbi0SNCAP78fx5nhsNWLW9siwRxRHiKMZkOsHx0XHHk9XwRrLwBX5gHGS/tBxW
+      gI8klmVhPB5jNBpJYNxsOpUdZDwe3XsN0qVpJVFrAzAmUJxZlu10VAKRmQxySmYhIBywq9KY
+      XKr6dt/3JabJFJAj//5sOsNXX30F3nB88803+OmnnyQJVeAL6IXbsjfvG3C/lBxWgA8Uzjne
+      XF4iDALpKrUsC1EcYxCGEjxGtkKW5RiPR0Y1Y71eSzRnnweHEjkIx8NYtwo63ZN+j6bOD0C6
+      Q2mbqW06z7IsfPPtd6JM1GgIcI40y2BbNhxX5D9UZYXhcCCN9ru7O9zc3EjX6+npKTabDV6c
+      nsLfw1j3S8nBC/SBUtc1yqLEYj7H//zv/2E4GmIQhi25VoqmrsE5QN95MBjg8u0lfN/Hl69e
+      Ga+penNoJQC67lHyuVPkWO+sOkUKiWkw0Hba1uc1apoGi8UcN7crNC1xVZKmWMznuLq+xjAc
+      oGlXAlKvZrMZ5vO5bOPbb7/F6enpDoXJY8lhBfhA4Zzj/OJCGp+u68rZuSwK5EWJMAjAsU1O
+      z7IMYRBIBmeSsixl1pnKvEDtANsOGcexvJ7f1ikzzaZkVOs4H7qmya4wXYfuRS9XJP37lgWm
+      XSPLsg51DEWOiXvpKcQEDgPgE8hqvcZ6vcZ0Mul0NmKZ3idN08gYgwou03E1pLroerzudtT1
+      fVXKsux0/r7ZX7/21fU1losFblcrCfAjL9ikfT7GGDabDSbtO1AxQACMqNnHkIMK9AmkKitR
+      2WW1EvGAOMbvnj+XSFAybk1CCdycCwh1HMc70VW10+s6u85Fqv5twhPRzK7aGKRCqSuQ2m5Z
+      Vnh3c4O7uwiDoSg7GvoBar6lXSQmOmrTdd2d3IqnIIcB8AnEsi1JxcTAsJzPZQdK01QW494n
+      jDG8fvMGnuvBti3keQHXc1EWwo/uOo6oeOJ5AOeSmkVHcAK7sz/9L3A/ieyom81GepNo8Ohe
+      qSRJcPridwCAo6MjWeKJrk+eIrXqJKlh+n09BTkMAE1MuJn3leFgIEhdNTgAY0wW4XgIVcts
+      NsPFjz+KTC5wJEmKu+gOvuej8RrJiMa5YK/+6acrNLzBbDoV+cFlBQ6Opq5bHV1Qhwe+hyRJ
+      MZ/P4La0LYTPJyY5YKuOha03i+5X7cy1If9XDeCp258iFuhgA3wCIda1oihkvrD64SeTyYMS
+      v1U8URRFohNxLgvSUSqi5/sA53j37gZgaNUsG4wJXXu1XmM0HKKqalRVibKqZP7wsE1Kubu7
+      w2g02qlMQ89CblCKVajIVFoZLMvqoGBVe4JiEX0lpx5LDgPgEwklyHDOd5JbptNpB0//0OvF
+      cdzpkGokl1YXgDw/Ddy2MqLKW7Rar+F74nsPBgJjpLpMyVjVOylFejebDRaLRcemIPyRmuSi
+      G9OUPfaY6Y8mOQyATyjUWWkwkBoRBAHCMOxwfz4kQYTzLS0LYfDJrQps6RpNEV4SVS8nbBDN
+      7iZ1RT2P4BR0nqraEVRCvVdVLMvCdPq4+b8mOdgAn1AIFAYIKEHU8oRmWSbZH3hryD5kADDG
+      pLFL8QLGmJxZyR4gL46qiuheI4JY037VeNaDb9TBVbdrHCfIixzLxQIAdmZ/+ltUjAxkjrNa
+      oOMpDIbDCvALCueCpoR46qlThmG4t/iGSfQC39S5q6rqgOLU4BcdS1Fk3UVK5+jMzeTnpxUn
+      z3M4roskSSRTXppmsG0Lk8kEm7s7TMaiZCoRAtd1g8EgxN1dBGYxvDw9xaKNED+mHFaAX1AY
+      Y9LHrxLLmpCa94nrugjDsMNXaqJJ1NUY+tVnef1Y+l+N5qo2QtK6cwmaMRqNRAmiqsJ0PBHI
+      T9eFZVtIswzMElV25vPZB/O0fkx5OnfyGxHGmCw0QbSJTdNgvV5jMpm8l1oQBIGs/0WiqkDU
+      Hm1XKU3UIJV+LknSVlnXBxFjDI5tyxhEGIayvYB3uYU456I+V4uW/VCm548tj6+E/QaFAkzk
+      L6cO08ers+865FoEtnAL3etEx5L6MhqNOioP7Vc5Tcn/b1oV1OOpLd2/rw884GGG/i8thwHw
+      iKLCkAH8LNWADGMSQohSFph6fV3Xp066Wq1wfn6Osizxxz/+UdYVo/22LYrM6SC4JEmkvUEG
+      ve592gf7eApyUIEeUVQentFo9LO9IgSyI6M4DEOsVivpcdGZq3XVJ45jrFYrWdPg6uoKURTh
+      5OQEl5eXeP78OaIowps3bzAejxFFEZIkwddff70TJDPZISrR1lNbBQ4rwCMKY4JQdzwef7BL
+      0HVdOWsTa4Ouv9MgUNmqaf94PJZYoHfv3kkKmKurK5mUX1UVXrx4gbIscXJy0gnMkTFsQp3S
+      AHlqnR84uEE/O6GK9VS2idCkxMdJzHZ5nks2a8pjiONYHvf69Wssl0upllFuL4HnVqsVXrUJ
+      PRToa5qmA38G0FGjptPp47yUPXIYAJ+ZNE2Dd+/eyboAqueHkKhRFMF1XcxmM9ze3mI4HEp7
+      hGhTJpPJDu8/BbP0VUX9JbAfXYtwRb7vY7lcPjl74P8B4oN0WyKnd3kAAAAASUVORK5CYII=
+    </thumbnail>
+  </thumbnails>
+</workbook>
