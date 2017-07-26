@@ -6,6 +6,10 @@ I will write the purpose for this repository.
 
 I will write where to download the data.
 
+# Methodology
+
+I will write the methodology for this repository.
+
 # License
 
 Copyright (c) 2017 GILLES PILON <gillespilon@gmail.com>
